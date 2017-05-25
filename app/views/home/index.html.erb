@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Matt's Thing</title>
+</head>
+
+<body>
+  <h2>Registration</h2>
+    <form id="registration">
+      <p>User Name</p>
+      <br>
+      <input type="text" name="user_id" size="35" style="text-align: center">
+      <br>
+      <p>First Name</p>
+      <br>
+      <input type="text" name="user_first_name" size="35" style="text-align: center">
+      <br>
+      <p>Last Name</p>
+      <br>
+      <input type="text" name="user_last_name" size="35" style="text-align: center">
+      <br>
+      <br>
+      <p>Password</p>
+      <input id="password" type="password" name="user_password" size="35" style="text-align: center">
+      <br>
+      <br>
+      <br>
+      <button>Submit</button>
+    </form>
+  <div id="output1"></div>
+
+  <hr>
+
+  <form id="login">
+    <input value="" placeholder="USERNAME"  type="text" name="user_name" />
+    <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+    <button>Login</button>
+  </form>
+
+  <br><br>
+  <div id="output2"></div>
+
+  <h1>Ensemble</h1>
+
+   <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
+
+    <button id="myButt">Login / Logout</button>
+
+    <div class="hide-show-container">
+    <fieldset>
+        <legend>Call Management</legend>
+
+        <!-- User input: Callee field. -->
+        Callee: <input type="text" id="callee"/>
+
+        <!-- User input: Handle call buttons. -->
+        <button id="makeCallButt">Make Call</button>
+
+        <button id="mute-call" name="button"></button>
+
+        <input type="button" value="Mute/Unmute Call" id="mute-call" onclick="toggleMute();" disabled/>
+
+        <input type="button" value="Hold/Unhold Call" id="hold-call" onclick="toggleHold();" disabled/>
+
+        <button id="showVideo">Show/Hide Video</button>
+
+        <input type="button" value="End Call" id="end-call" onclick="endCall();" disabled/>
+
+        <button id="acceptCall">Accept Call</button>
+
+        <input type="button" value="Decline Call" id="decline-call" onclick="declineCall();" disabled/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Messages</legend>
+
+        <!-- Message output container. -->
+        <div id="messages"> </div>
+    </fieldset>
+
+    <!-- Media containers. -->
+    Remote video: <div id="remote-container"></div>
+
+    Local video: <div id="local-container"></div>
+  </div>
+
+
+
+  <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
+
+  </script>
+</body>
+
+
+</html>

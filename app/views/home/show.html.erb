@@ -1,0 +1,43 @@
+<h1>Ensemble</h1>
+
+ <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
+
+  <button id="myButt">Login / Logout</button>
+
+  <div class="hide-show-container">
+  <fieldset>
+      <legend>Call Management</legend>
+
+      <!-- User input: Callee field. -->
+      Callee: <input type="text" id="callee"/>
+
+      <!-- User input: Handle call buttons. -->
+      <button id="makeCallButt">Make Call</button>
+
+      <!-- <input type="button" value="Make Call" id="make-call" onclick="startCall();"/> -->
+
+      <input type="button" value="Mute/Unmute Call" id="mute-call" onclick="toggleMute();" disabled/>
+
+      <input type="button" value="Hold/Unhold Call" id="hold-call" onclick="toggleHold();" disabled/>
+
+      <button id="showVideo">Show/Hide Video</button>
+
+      <input type="button" value="End Call" id="end-call" onclick="endCall();" disabled/>
+
+      <button id="acceptCall">Accept Call</button>
+
+      <input type="button" value="Decline Call" id="decline-call" onclick="declineCall();" disabled/>
+  </fieldset>
+
+  <fieldset>
+      <legend>Messages</legend>
+
+      <!-- Message output container. -->
+      <div id="messages"> </div>
+  </fieldset>
+
+  <!-- Media containers. -->
+  Remote video: <div id="remote-container"></div>
+
+  Local video: <div id="local-container"></div>
+</div>

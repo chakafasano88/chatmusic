@@ -1,0 +1,58 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//
+form#registration {
+    max-width: 500px;
+    padding: 10px 20px;
+    background-color: #468189;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+#registration button {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+#registration input[type="text"] {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  font-size: 20px;
+}
+#registration input[type="text"]:focus,
+#registration input[type="text"].focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+#registration input[type="password"] {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  font-size: 20px;
+}
+#registration input[type="password"]:focus,
+#registration input[type="password"].focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+#registration p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
