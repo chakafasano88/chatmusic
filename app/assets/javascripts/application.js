@@ -14,15 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-// Domain Access Token
-// DAT19d44511c99f444396ae42857881e85b
-// User 1 Access Token UAT6b2303a415024e0cb382623565aeb700
-
 document.addEventListener("DOMContentLoaded", function(event) {
 console.log("DOM fully loaded and parsed");
 
-// https://api.kandy.io/v1.2/domains/users/user_id?key=DATfa8a1a2cf85448228810d29a77632335
 
   kandy.setup();
 
@@ -42,7 +36,7 @@ console.log("DOM fully loaded and parsed");
       "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
   }
     // console.log(user)
-    fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=DAT1fd84286cf3649978264b5131b137ced', {
+    fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=ENV"[KANDY_API]"', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -67,7 +61,7 @@ console.log("DOM fully loaded and parsed");
   login.addEventListener('submit', function (e) {
     e.preventDefault()
     kandy.login(
-      'DAK05485860814b4b349096b7013f7ba900',
+      'ENSEMBLE_API_KEY',
       e.target.user_name.value,
       e.target.user_password.value,
       function(){
@@ -175,11 +169,11 @@ console.log("DOM fully loaded and parsed");
   function onCallEstablished(call) {
       log("Call established.");
 
-      // Handle UI changes. Call in progress.
-      document.getElementById("make-call").disabled = true;
-      document.getElementById("mute-call").disabled = false;
-      document.getElementById("hold-call").disabled = false;
-      document.getElementById("end-call").disabled = false;
+    // Handle UI changes. Call in progress.
+    document.getElementById("make-call").disabled = true;
+    document.getElementById("mute-call").disabled = false;
+    document.getElementById("hold-call").disabled = false;
+    document.getElementById("end-call").disabled = false;
   };
 
 });
