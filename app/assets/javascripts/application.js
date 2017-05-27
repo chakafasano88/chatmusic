@@ -16,7 +16,7 @@
 //= require_tree .
 document.addEventListener("DOMContentLoaded", function(event) {
 console.log("DOM fully loaded and parsed");
-
+    console.log(acceptCall)
 
   kandy.setup();
 
@@ -36,7 +36,7 @@ console.log("DOM fully loaded and parsed");
       "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
   }
     // console.log(user)
-    fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=ENV"[KANDY_API]"', {
+    fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=DAT1fd84286cf3649978264b5131b137ced', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ console.log("DOM fully loaded and parsed");
   login.addEventListener('submit', function (e) {
     e.preventDefault()
     kandy.login(
-      'ENSEMBLE_API_KEY',
+      'DAK05485860814b4b349096b7013f7ba900',
       e.target.user_name.value,
       e.target.user_password.value,
       function(){
@@ -82,12 +82,11 @@ console.log("DOM fully loaded and parsed");
      localVideoContainer: document.getElementById("local-container"),
 
       // Register listeners to call events.
-      // listeners: {
-      //     callInitiated: onCallInitiated,
-      //     callIncoming: onCallIncoming,
-      //     callEstablished: onCallEstablished,
-      //     callEnded: onCallEnded
-      // }
+      listeners: {
+          callInitiated: onCallInitiated,
+          callIncoming: onCallIncoming,
+          callEstablished: onCallEstablished,
+      }
   });
 
     // Utility function for appending messages to the message div.
@@ -98,8 +97,9 @@ console.log("DOM fully loaded and parsed");
   // Variable to keep track of video display status.
   var showVideo = true;
 // ================== MAKE A CALL ===================
-  var makeCallButt = document.getElementById("makeCallButt")
+  var makeCallButt = document.getElementById('makeCallButt')
     makeCallButt.addEventListener("click", startCall)
+
   //  Make a call to the callee
   function startCall() {
       var callee = document.getElementById("callee").value;

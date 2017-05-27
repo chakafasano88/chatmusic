@@ -32,49 +32,45 @@
   <div id="output1"></div>
 
   <hr>
+  <br><br>
+  <div id="output2"></div>
 
+  <h1>Start A Session!</h1>
   <form id="login">
     <input value="" placeholder="USERNAME"  type="text" name="user_name" />
     <input value="" placeholder="PASSWORD" type="password" name="user_password" />
     <button>Login</button>
   </form>
 
-  <br><br>
-  <div id="output2"></div>
+<br><br>
+<hr>
+  <!-- Login Message -->
+<div id="output2"></div>
 
-  <h1>Ensemble</h1>
 
-   <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
-
-    <button id="myButt">Login / Logout</button>
-
-    <div class="hide-show-container">
+  <div class="hide-show-container">
     <fieldset>
-        <legend>Call Management</legend>
+      <legend class="calltext" >Call Management</legend>
 
-        <!-- User input: Callee field. -->
-        Callee: <input type="text" id="callee"/>
+      <!-- User input: Callee field. -->
+      <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
 
-        <!-- User input: Handle call buttons. -->
-        <button id="makeCallButt">Make Call</button>
+      <!-- User input: Handle call buttons. -->
+      <button type="button" class="callbutt" id="makeCallButt">Make Call</button>
 
-        <button id="mute-call" name="button"></button>
+      <button type="button" class="callbutt" id="mute-call" name="button">Mute Call</button>
 
-        <input type="button" value="Mute/Unmute Call" id="mute-call" onclick="toggleMute();" disabled/>
+      <button class="callbutt" id="showVideo">Show/Hide Video</button>
 
-        <input type="button" value="Hold/Unhold Call" id="hold-call" onclick="toggleHold();" disabled/>
+      <button class="callbutt" type="button" name="button">End Call</button>
 
-        <button id="showVideo">Show/Hide Video</button>
+      <button class="callbutt" type="button"  id="acceptCall">Accept Call</button>
 
-        <input type="button" value="End Call" id="end-call" onclick="endCall();" disabled/>
-
-        <button id="acceptCall">Accept Call</button>
-
-        <input type="button" value="Decline Call" id="decline-call" onclick="declineCall();" disabled/>
+      <button class="callbutt" type="button" name="button">Decline Call</button>
     </fieldset>
 
     <fieldset>
-        <legend>Messages</legend>
+        <legend class="calltext">Messages</legend>
 
         <!-- Message output container. -->
         <div id="messages"> </div>
@@ -87,11 +83,4 @@
   </div>
 
 
-
   <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
-
-  </script>
-</body>
-
-
-</html>

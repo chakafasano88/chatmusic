@@ -18,3 +18,9 @@ p.navbar-text.pull-right {
   border: 1px solid black;
   height: 100px;
 }
+
+body {
+  background-image: url("mixtape.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
