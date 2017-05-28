@@ -1,0 +1,42 @@
+<form id="login">
+  <input value="" placeholder="USERNAME"  type="text" name="user_name" />
+  <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+  <button>Login</button>
+</form>
+
+<br><br>
+<div id="output2"></div>
+
+<div class="hide-show-container">
+  <fieldset>
+    <legend class="calltext" >Call Management</legend>
+
+    <!-- User input: Callee field. -->
+    <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
+
+    <!-- User input: Handle call buttons. -->
+    <button type="button" class="callbutt" id="makeCallButt">Make Call</button>
+
+    <button type="button" class="callbutt" id="mute-call" name="button">Mute Call</button>
+
+    <button class="callbutt" id="showVideo">Toggle Video</button>
+
+    <button class="callbutt" type="button" name="button">End Call</button>
+
+    <button class="callbutt" type="button"  id="acceptCall">Accept Call</button>
+
+    <button class="callbutt" type="button" name="button">Decline Call</button>
+  </fieldset>
+
+  <fieldset>
+      <legend class="calltext">Messages</legend>
+
+      <!-- Message output container. -->
+      <div id="messages"> </div>
+  </fieldset>
+
+  <!-- Media containers. -->
+  Remote video: <div id="remote-container"></div>
+
+  Local video: <div id="local-container"></div>
+</div>
