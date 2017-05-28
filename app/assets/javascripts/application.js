@@ -28,6 +28,7 @@ console.log("DOM fully loaded and parsed");
           callInitiated: onCallInitiated,
           callIncoming: onCallIncoming,
           callEstablished: onCallEstablished,
+          callEnded: onCallEnded
       }
   });
 
@@ -89,26 +90,26 @@ console.log("DOM fully loaded and parsed");
     })
   }
 
-// // ============= LOGIN END =================
+// ============= LOGIN END =================
 
     // Utility function for appending messages to the message div.
   function log(message) {
-      document.getElementById("messages").innerHTML += "<div>" + message + "</div>";
+    document.getElementById("messages").innerHTML += "<div>" + message + "</div>";
   }
 
   // Variable to keep track of video display status.
   var showVideo = true;
 // ================== MAKE A CALL ===================
   var makeCallButt = document.getElementById('makeCallButt')
-    makeCallButt.addEventListener("click", startCall)
+    makeCallButt.addEventListener("click", startCall);
 
   //  Make a call to the callee
   function startCall() {
-      var callee = document.getElementById("callee").value;
+    var callee = document.getElementById("callee").value;
 
-      // Tell Kandy to make a call to callee.
-      kandy.call.makeCall(callee, showVideo);
-  }
+    // Tell Kandy to make a call to callee.
+    kandy.call.makeCall(callee, showVideo);
+  };
 
   // Variable to keep track of the call.
   var callId;
@@ -125,10 +126,9 @@ console.log("DOM fully loaded and parsed");
       document.getElementById("end-call").disabled = false;
   };
 
-
   // What to do for an incoming call.
   function onCallIncoming(call) {
-      log("Incoming call from " + call.callerNumber);
+    log("Incoming call from " + call.callerNumber);
 
       // Store the call id, so the callee has access to it.
       callId = call.getId();
@@ -177,6 +177,53 @@ console.log("DOM fully loaded and parsed");
     document.getElementById("mute-call").disabled = false;
     document.getElementById("hold-call").disabled = false;
     document.getElementById("end-call").disabled = false;
+  };
+
+  var declineCallElement = document.getElementById("declineCall")
+    declineCallElement.addEventListener("click", declineCall)
+  // Reject an incoming call.
+  function declineCall() {
+      // Tell Kandy to reject the call.
+      kandy.call.rejectCall(callId);
+
+      log("Call rejected.");
+      // Handle UI changes. Call no longer incoming.
+      document.getElementById("acceptCall").disabled = true;
+      document.getElementById("declineCall").disabled = true;
+  };
+
+  // Variable to keep track of mute status.
+  var isMuted = false;
+
+    var muteCall = document.getElementById("muteCall")
+      muteCall.addEventListener("click", toggleMute)
+  // Mute or unmute the call, depending on current status.
+  function toggleMute() {
+      if(isMuted) {
+          kandy.call.unMuteCall(callId);
+          log("Unmuting call.");
+          isMuted = false;
+      } else {
+          kandy.call.muteCall(callId);
+          log("Muting call.");
+          isMuted = true;
+      }
+  };
+
+  var endCall = document.getElementById("endCall")
+    endCall.addEventListener("click", onCallEnded)
+    // What to do when a call is ended.
+  function onCallEnded(call) {
+      log("Call ended.");
+
+      // Handle UI changes. No current call.
+      document.getElementById("makeCallButt").disabled = false;
+      document.getElementById("muteCall").disabled = true;
+      document.getElementById("endCall").disabled = true;
+
+      // Call no longer active, reset mute and hold statuses.
+      isMuted = false;
+      isHeld = false;
   };
 
 });
