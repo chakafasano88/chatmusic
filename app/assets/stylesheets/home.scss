@@ -51,8 +51,74 @@ form#registration {
 #registration input[type="password"]:focus,
 #registration input[type="password"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
-}
+}v
 
 #registration p {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+
+}
+
+#ensemble {
+  font-family: 'Pacifico', cursive;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px #E14848;
+  border-bottom: 3px solid gold;
+
+}
+
+.tagline {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5em;
+  color: gold;
+  text-align: center;
+  word-wrap: break-word;
+  text-shadow: 2px 2px #E14848;
+  position: relative;
+  bottom: 30px;
+}
+
+#link-to-video {
+  text-align: center;
+  text-decoration: none;
+  color: gold;
+  position: relative;
+  bottom: 15px;
+}
+
+#plug-hide-text {
+  display: none;
+}
+
+#plug:hover #plug-hide-text {
+  font-family: monospace;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  width: 30%;
+  left: 35%;
+  bottom: 40px;
+  opacity: 4;
+  border: 1px solid black;
+  margin-bottom: 0px;
+}
+
+#plug:hover #plug-hide-text {
+  font-family: monospace;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  width: 30%;
+  left: 35%;
+  bottom: 40px;
+  opacity: 4;
+  border: 1px solid black;
 }
