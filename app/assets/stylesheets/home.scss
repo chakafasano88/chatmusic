@@ -1,6 +1,7 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 // HEADER STYLING
 #ensemble {
   font-family: 'Pacifico', cursive;
@@ -16,7 +17,6 @@
   margin-bottom: 120px;
 
 }
-
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
   font-family: monospace;
@@ -82,7 +82,7 @@
 }
 
 #link-to-video:hover {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 // ALL BUTTONS ON HOME/SHOW PAGE
@@ -93,9 +93,9 @@
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 25px 30px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 15px 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -106,42 +106,49 @@
   transition: all 0.3s;
   background: #1abc9c;
   color: #fff;
-  padding: 25px 60px 25px 120px;
+  padding: 25px 40px 25px 30px;
+  border-radius: 10px;
 }
 
-fieldset {
+.call-buttons-container {
+  margin-left: 130px;
+}
+
+.callee-container {
+  margin-bottom: 20px;
+}
+
+.fieldset {
   background-color: #468189;
-  border: #E14848;
-  border-radius: 20px;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 .login-button {
   position: relative;
   width: 30%;
-  left: 50%;
-}
-
-.register-button {
-  position: relative;
-  width: 30%;
-  left: 50%;
+  left: 60%;
 
 }
 
+#registerButt {
+  float: right;
+}
+// LOGIN MESSAGE TEXT
 #output1 {
   font-family: arial;
   position: relative;
-  font-size: 5em;
+  font-size: 25px;
   letter-spacing: 5px;
   color: gold;
   text-align: center;
   text-shadow: 2px 2px #E14848;
 }
-
+// REGISTRATION MESSAGE TEXT
 #output2 {
   font-family: arial;
   position: relative;
-  font-size: 5em;
+  font-size: 25px;
   letter-spacing: 5px;
   color: gold;
   text-align: center;
@@ -152,7 +159,7 @@ fieldset {
 #messages {
   font-family: arial;
   position: relative;
-  font-size: 5em;
+  font-size: 25px;
   letter-spacing: 5px;
   color: gold;
   text-shadow: 2px 2px #E14848;
@@ -166,6 +173,24 @@ fieldset {
   letter-spacing: 5px;
   color: gold;
   text-shadow: 2px 2px #E14848;
+}
+
+
+#start-session {
+  font-size: 60px;
+}
+
+.show-page-container {
+  position: relative;
+  height: 500px;
+  bottom: 100px;
+}
+
+.secondary-background-image {
+  border: 1px solid red;
+  height: 500px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
@@ -217,8 +242,14 @@ form#registration {
 #registration input[type="password"]:focus,
 #registration input[type="password"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
-}v
+}
 
 #registration p {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#remote-container {
+  width: 30%;
+  height: 300px;
+  border: 1px solid red;
 }

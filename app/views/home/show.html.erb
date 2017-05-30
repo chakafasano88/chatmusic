@@ -1,12 +1,11 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
 <div class="register-button">
   <button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
-</div>
 <div class="login-button">
-    <form id="login">
+  <form id="login">
     <input value="" placeholder="USERNAME"  type="text" name="user_name" />
     <input value="" placeholder="PASSWORD" type="password" name="user_password" />
-    <button class="callbutt">Login</button>
+    <button id="loginbutton" class="callbutt">Login</button>
   </form>
   <br><br>
   <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
@@ -14,30 +13,34 @@
 </div>
 
 <!-- ==================== CALL FIELD ========================= -->
-<h2 class="calltext">Start A Session!</h2>
-<div class="hide-show-container">
-  <fieldset>
+<div class="show-page-container">
+  <h2 id="start-session" class="calltext">Start A Session!</h2>
+
+  <fieldset class="fieldset">
     <legend class="calltext">Call Management</legend>
 
     <!-- User input: Callee field. -->
+  <div class="callee-container">
     <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
-
-    <!-- MAKE A CALL -->
+  </div>
+  <div class="call-buttons-container">
+        <!-- MAKE A CALL -->
     <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
 
     <!-- TOGGLE VIDEO -->
     <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
 
     <!-- END A CALL -->
-    <button class="callbutt" type="button" name="button"><span></span>End Call</button>
+    <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
 
     <!-- ACCEPT A CALL -->
     <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
+  </div>
 
   </fieldset>
 
   <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
-  <fieldset>
+  <fieldset class="fieldset">
       <legend class="calltext">Messages</legend>
 
       <!-- Message output container. -->

@@ -70,8 +70,6 @@ console.log("DOM fully loaded and parsed");
 
   }
 
-
-
 //====================== LOGIN PEOPLE ====================
 
 //GET https://api.kandy.io/v1.2/domains/users/accesstokens?key=DATfa8a1a2cf85448228810d29a77632335
@@ -149,8 +147,6 @@ console.log("DOM fully loaded and parsed");
 
       log("Call answered.");
       // Handle UI changes. Call no longer incoming.
-      document.getElementById("accept-call").disabled = true;
-      document.getElementById("decline-call").disabled = true;
     };
 
   var videoShowElement = document.getElementById("showVideo")
@@ -182,5 +178,13 @@ console.log("DOM fully loaded and parsed");
   document.getElementById("registerButt").onclick = function() {
     window.location = "/home/register";
   };
+
+  var callEndElement = document.getElementById('callEnd')
+    callEndElement.addEventListener('click', endCall)
+    // End a call.
+  function endCall() {
+      // Tell Kandy to end the call.
+      kandy.call.endCall(callId);
+  }
 
 });
