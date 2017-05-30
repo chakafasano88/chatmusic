@@ -18,12 +18,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 console.log("DOM fully loaded and parsed");
 
-  var modal = document.getElementById("modal")
-
-  function modal(){
-    document.getElementById("modal")
-
-  }
     // Setup Kandy to make and receive calls.
   kandy.setup({
       //  HTML elements for streaming containers.

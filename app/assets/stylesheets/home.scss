@@ -71,12 +71,15 @@ form#registration {
   color: gold;
   text-align: center;
   text-shadow: 2px 2px #E14848;
-  border-bottom: 3px solid gold;
+  height: 140px;
+  // background-color: rgba(225,223,0, .4);
+  margin: 0px;
+  margin-bottom: 50px;
 
 }
 
 .tagline {
-  font-family: 'Pacifico', cursive;
+  font-family: monospace;
   font-size: 3.5em;
   color: gold;
   text-align: center;
@@ -98,27 +101,92 @@ form#registration {
   display: none;
 }
 
-#plug:hover #plug-hide-text {
-  font-family: monospace;
-  display: block;
-  position: relative;
-  font-size: 25px;
-  width: 30%;
-  left: 35%;
-  bottom: 40px;
-  opacity: 4;
-  border: 1px solid black;
-  margin-bottom: 0px;
+#plug:hover {
+  font-size: 1.2em;
 }
 
 #plug:hover #plug-hide-text {
-  font-family: monospace;
+  font-family: arial;
+  text-shadow: 2px 2px #E14848;
   display: block;
   position: relative;
   font-size: 25px;
   width: 30%;
   left: 35%;
-  bottom: 40px;
+  bottom: 50px;
   opacity: 4;
+  margin-bottom: 0px;
+}
+
+
+#connect:hover {
+  font-size: 1.2em;
+
+}
+
+#connect-hide-text {
+  display: none;
+}
+
+#connect:hover #connect-hide-text {
+  font-family: arial;
+  text-shadow: 2px 2px #E14848;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  width: 30%;
+  left: 35%;
+  bottom: 50px;
+  opacity: 4;
+
+
+}
+
+.callbutt {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #fcad26;
+  color: #fff;
+  padding: 25px 60px 25px 120px;
+}
+
+.hide-show-container {
+}
+
+legend {
   border: 1px solid black;
+}
+
+fieldset {
+  background-color: #fcd04b;
+  border: #E14848;
+  border-radius: 20px;
+}
+
+.login-button {
+  position: relative;
+  width: 30%;
+  left: 50%;
+}
+
+.register-button {
+  position: relative;
+  width: 30%;
+  left: 50%;
+
 }

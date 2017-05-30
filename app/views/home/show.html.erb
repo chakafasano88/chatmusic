@@ -1,7 +1,4 @@
-  <h2>Registration</h2>
 
-
-  
   <div id="modal">
     <form id="registration">
       <p>User Name</p>
@@ -24,43 +21,54 @@
       <br>
       <button>Submit</button>
     </form>
-  </div>
   <div id="output1"></div>
 
-  <hr>
   <br><br>
   <div id="output2"></div>
+</div>
+<!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
+<div class="register-button">
+  <button class="callbutt" id="modalButt" type="button" name="button">Register Account!</button>
+</div>
+<div class="login-button">
+    <form id="login">
+    <input value="" placeholder="USERNAME"  type="text" name="user_name" />
+    <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+    <button class="callbutt">Login</button>
+  </form>
 
-<form id="login">
-  <input value="" placeholder="USERNAME"  type="text" name="user_name" />
-  <input value="" placeholder="PASSWORD" type="password" name="user_password" />
-  <button>Login</button>
-</form>
+  <br><br>
+  <div id="output2"></div>
+</div>
 
-<br><br>
-<div id="output2"></div>
-
+<!-- ==================== CALL FIELD ========================= -->
 <div class="hide-show-container">
   <fieldset>
-    <legend class="calltext" >Call Management</legend>
+    <legend>Call Management</legend>
 
     <!-- User input: Callee field. -->
     <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
 
-    <!-- User input: Handle call buttons. -->
-    <button type="button" class="callbutt" id="makeCallButt">Make Call</button>
+    <!-- MAKE A CALL -->
+    <button type="button" class="callbutt" id="makeCallButt"><span>Hey</span>Make Call</button>
 
-    <button type="button" class="callbutt" id="mute-call" name="button">Mute Call</button>
+    <!-- MUTE A CALL -->
+    <button type="button" class="callbutt" id="mute-call" name="button"><span>Hey</span>Mute Call</button>
 
-    <button class="callbutt" id="showVideo">Toggle Video</button>
+    <!-- TOGGLE VIDEO -->
+    <button class="callbutt" id="showVideo"><span>Hey</span>Toggle Video</button>
 
-    <button class="callbutt" type="button" name="button">End Call</button>
+    <!-- END A CALL -->
+    <button class="callbutt" type="button" name="button"><span>Hey</span>End Call</button>
 
-    <button class="callbutt" type="button"  id="acceptCall">Accept Call</button>
+    <!-- ACCEPT A CALL -->
+    <button class="callbutt" type="button"  id="acceptCall"><span>Hey</span>Accept Call</button>
 
-    <button class="callbutt" type="button" name="button">Decline Call</button>
+    <!-- DECLINE A CALL -->
+    <button class="callbutt" type="button" name="button"><span>Hey</span>Decline Call</button>
   </fieldset>
 
+  <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
   <fieldset>
       <legend class="calltext">Messages</legend>
 
@@ -68,7 +76,7 @@
       <div id="messages"> </div>
   </fieldset>
 
-  <!-- Media containers. -->
+  <!-- MEDIA CONTAINERS -->
   Remote video: <div id="remote-container"></div>
 
   Local video: <div id="local-container"></div>
