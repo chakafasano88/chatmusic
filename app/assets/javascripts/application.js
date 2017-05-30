@@ -64,7 +64,7 @@ console.log("DOM fully loaded and parsed");
           window.location = "/home/show"
         })
         .catch(error=>{
-          console.log('u fuked up')
+          console.log('Registraion Failed')
         })
       })
 
@@ -179,12 +179,20 @@ console.log("DOM fully loaded and parsed");
     window.location = "/home/register";
   };
 
-  // var loginModal = document.querySelector("hidden-login-div")
-  // var registerButtElement = document.getElementById('loginbutton')
-  //
-  // registerButtElement.addEventListener('click', function(){
-  //   loginModal.setAttribute('style', 'display:block')
-  // });
+  var loginButtElement = document.querySelector('.login-button-link')
+  var loginModal = document.querySelector(".hidden-login-div")
+
+    loginButtElement.onclick = function() {
+      loginModal.style.display = "block";
+  };
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+
+
 
   var callEndElement = document.getElementById('callEnd')
     callEndElement.addEventListener('click', endCall)
@@ -193,9 +201,6 @@ console.log("DOM fully loaded and parsed");
       // Tell Kandy to end the call.
       kandy.call.endCall(callId);
   };
-
-
-
 
 
 });

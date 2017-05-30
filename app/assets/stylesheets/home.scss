@@ -142,12 +142,17 @@
   background-color: #468189;
   border-radius: 15px;
   border: 1px solid black;
+  opacity: .97;
 }
 
-.login-button {
+.login-button-link-div {
   position: relative;
   width: 30%;
   left: 60%;
+}
+
+#login-button {
+  position: relative;
 
 }
 
@@ -196,7 +201,6 @@
   text-shadow: 2px 2px #E14848;
 }
 
-
 #start-session {
   font-size: 60px;
 }
@@ -213,16 +217,21 @@
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
+
+#login-button {
+  position: relative;
+  bottom: 97px;
+}
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
-    max-width: 500px;
-    padding: 10px 20px;
-    background-color: #468189;
-    margin: 10px auto;
-    padding: 22px;
-    border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    text-align: center;
+  max-width: 500px;
+  padding: 10px 20px;
+  background-color: #468189;
+  margin: 10px auto;
+  padding: 22px;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 #registration button {
@@ -271,5 +280,33 @@ form#registration {
 
 #remote-container {
   width: 40%;
-  height: 500px;
+}
+
+#local-container {
+  width: 40%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.index-content {
+  position: relative;
+  height: 380px;
+  width: 50%;
+  left: 25%;
+  background-color: white;
+  text-overflow: none;
+  bottom: 60px;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+.index-content {
+
+
 }

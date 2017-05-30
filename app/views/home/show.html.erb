@@ -1,18 +1,22 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
 <button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
-
-<div class="login-button">
-  <button id="loginbutton" class="callbutt">Login</button>
+<!-- LOGIN LINK -->
+<div class="login-button-link-div">
+  <button id="login-button" class="callbutt login-button-link">Login</button>
   <br><br>
   <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
-  <div id="output2"></div>
 </div>
 
 <div id="modal" class="hidden-login-div">
   <form id="login">
+    <span class="close">&times;</span>
     <input value="" placeholder="USERNAME"  type="text" name="user_name" />
     <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+    <br>
+    <br>
+    <button id="login-button" class="callbutt">Login</button>
   </form>
+  <div id="output2"></div>
 </div>
 
 <!-- ==================== CALL FIELD ========================= -->
@@ -30,14 +34,15 @@
         <!-- MAKE A CALL -->
     <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
 
+    <!-- ACCEPT A CALL -->
+    <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
+
     <!-- TOGGLE VIDEO -->
     <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
 
     <!-- END A CALL -->
     <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
 
-    <!-- ACCEPT A CALL -->
-    <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
   </div>
 
   </fieldset>
