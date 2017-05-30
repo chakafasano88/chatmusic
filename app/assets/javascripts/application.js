@@ -179,12 +179,23 @@ console.log("DOM fully loaded and parsed");
     window.location = "/home/register";
   };
 
+  // var loginModal = document.querySelector("hidden-login-div")
+  // var registerButtElement = document.getElementById('loginbutton')
+  //
+  // registerButtElement.addEventListener('click', function(){
+  //   loginModal.setAttribute('style', 'display:block')
+  // });
+
   var callEndElement = document.getElementById('callEnd')
     callEndElement.addEventListener('click', endCall)
     // End a call.
   function endCall() {
       // Tell Kandy to end the call.
       kandy.call.endCall(callId);
-  }
+  };
+
+
+
+
 
 });

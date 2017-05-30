@@ -110,6 +110,26 @@
   border-radius: 10px;
 }
 
+.hidden-login-div {
+  display: none;
+
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  width: 450px;
+  height: 350px;
+  background-color: #468189;
+  border-radius: 15px;
+  border: 1px solid black;
+  z-index: 10;
+}
+
 .call-buttons-container {
   margin-left: 130px;
 }
@@ -132,7 +152,8 @@
 }
 
 #registerButt {
-  float: right;
+  position: relative;
+  left: 72%;
 }
 // LOGIN MESSAGE TEXT
 #output1 {
@@ -249,7 +270,6 @@ form#registration {
 }
 
 #remote-container {
-  width: 30%;
-  height: 300px;
-  border: 1px solid red;
+  width: 40%;
+  height: 500px;
 }

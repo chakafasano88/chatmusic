@@ -1,15 +1,18 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
-<div class="register-button">
-  <button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
+<button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
+
 <div class="login-button">
-  <form id="login">
-    <input value="" placeholder="USERNAME"  type="text" name="user_name" />
-    <input value="" placeholder="PASSWORD" type="password" name="user_password" />
-    <button id="loginbutton" class="callbutt">Login</button>
-  </form>
+  <button id="loginbutton" class="callbutt">Login</button>
   <br><br>
   <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
   <div id="output2"></div>
+</div>
+
+<div id="modal" class="hidden-login-div">
+  <form id="login">
+    <input value="" placeholder="USERNAME"  type="text" name="user_name" />
+    <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+  </form>
 </div>
 
 <!-- ==================== CALL FIELD ========================= -->
@@ -21,7 +24,7 @@
 
     <!-- User input: Callee field. -->
   <div class="callee-container">
-    <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
+    <span class="calltext" >Collaborater Name:</span> <input type="text" id="callee"/>
   </div>
   <div class="call-buttons-container">
         <!-- MAKE A CALL -->
