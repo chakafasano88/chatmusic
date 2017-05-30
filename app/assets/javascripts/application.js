@@ -179,4 +179,8 @@ console.log("DOM fully loaded and parsed");
     document.getElementById("end-call").disabled = false;
   };
 
+  document.getElementById("modalButt").onclick = function() {
+    window.location = "/home/register";
+  };
+
 });

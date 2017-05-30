@@ -74,7 +74,7 @@ form#registration {
   height: 140px;
   // background-color: rgba(225,223,0, .4);
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 
 }
 
@@ -138,8 +138,10 @@ form#registration {
   left: 35%;
   bottom: 50px;
   opacity: 4;
+}
 
-
+#link-to-video:hover {
+  font-size: 1.2em;
 }
 
 .callbutt {
@@ -160,7 +162,7 @@ form#registration {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background: #fcad26;
+  background: #1abc9c;
   color: #fff;
   padding: 25px 60px 25px 120px;
 }
@@ -173,7 +175,7 @@ legend {
 }
 
 fieldset {
-  background-color: #fcd04b;
+  background-color: #468189;
   border: #E14848;
   border-radius: 20px;
 }
