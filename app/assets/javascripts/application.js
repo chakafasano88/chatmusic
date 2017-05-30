@@ -29,7 +29,6 @@ console.log("DOM fully loaded and parsed");
           callInitiated: onCallInitiated,
           callIncoming: onCallIncoming,
           callEstablished: onCallEstablished,
-          callEnded: onCallEnded
       }
   });
 
@@ -178,53 +177,6 @@ console.log("DOM fully loaded and parsed");
     document.getElementById("mute-call").disabled = false;
     document.getElementById("hold-call").disabled = false;
     document.getElementById("end-call").disabled = false;
-  };
-
-  var declineCallElement = document.getElementById("declineCall")
-    declineCallElement.addEventListener("click", declineCall)
-  // Reject an incoming call.
-  function declineCall() {
-      // Tell Kandy to reject the call.
-      kandy.call.rejectCall(callId);
-
-      log("Call rejected.");
-      // Handle UI changes. Call no longer incoming.
-      document.getElementById("acceptCall").disabled = true;
-      document.getElementById("declineCall").disabled = true;
-  };
-
-  // Variable to keep track of mute status.
-  var isMuted = false;
-
-    var muteCall = document.getElementById("muteCall")
-      muteCall.addEventListener("click", toggleMute)
-  // Mute or unmute the call, depending on current status.
-  function toggleMute() {
-      if(isMuted) {
-          kandy.call.unMuteCall(callId);
-          log("Unmuting call.");
-          isMuted = false;
-      } else {
-          kandy.call.muteCall(callId);
-          log("Muting call.");
-          isMuted = true;
-      }
-  };
-
-  var endCall = document.getElementById("endCall")
-    endCall.addEventListener("click", onCallEnded)
-    // What to do when a call is ended.
-  function onCallEnded(call) {
-      log("Call ended.");
-
-      // Handle UI changes. No current call.
-      document.getElementById("makeCallButt").disabled = false;
-      document.getElementById("muteCall").disabled = true;
-      document.getElementById("endCall").disabled = true;
-
-      // Call no longer active, reset mute and hold statuses.
-      isMuted = false;
-      isHeld = false;
   };
 
 });
