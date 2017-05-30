@@ -192,8 +192,6 @@ console.log("DOM fully loaded and parsed");
     modal.style.display = "none";
   };
 
-
-
   var callEndElement = document.getElementById('callEnd')
     callEndElement.addEventListener('click', endCall)
     // End a call.

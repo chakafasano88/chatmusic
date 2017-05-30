@@ -4,7 +4,7 @@
 
 // HEADER STYLING
 #ensemble {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', cursive;
   position: relative;
   font-size: 5em;
   letter-spacing: 5px;
@@ -12,7 +12,6 @@
   text-align: center;
   text-shadow: 2px 2px #E14848;
   height: 140px;
-  // background-color: rgba(225,223,0, .4);
   margin: 0px;
   margin-bottom: 120px;
 
@@ -20,7 +19,7 @@
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
   font-family: monospace;
-  font-size: 3.5em;
+  font-size: 3.8em;
   color: gold;
   text-align: center;
   word-wrap: break-word;
@@ -193,7 +192,7 @@
 }
 // ALL TEXT WITHIN CALL INTERFACE
 .calltext {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', cursive;
   position: relative;
   font-size: 5em;
   letter-spacing: 5px;
@@ -222,6 +221,11 @@
   position: relative;
   bottom: 97px;
 }
+
+#modal-button {
+  position: relative;
+  top: 97px;
+}
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
   max-width: 500px;
@@ -230,7 +234,7 @@ form#registration {
   margin: 10px auto;
   padding: 22px;
   border-radius: 8px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Roboto", Times, serif;
   text-align: center;
 }
 
@@ -294,19 +298,300 @@ form#registration {
     cursor: pointer;
 }
 
-.index-content {
-  position: relative;
-  height: 380px;
-  width: 50%;
-  left: 25%;
-  background-color: white;
-  text-overflow: none;
-  bottom: 60px;
-  border-radius: 10px;
-  opacity: .8;
-}
+@media screen and (max-width: 699px) and (min-width: 320px) {
 
-.index-content {
+  // HEADER STYLING
+  #ensemble {
+    font-family: 'Josefin Sans', cursive;
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 5px;
+    color: gold;
+    text-align: center;
+    text-shadow: 2px 2px #E14848;
+    height: 140px;
+    background-color: rgba(225,223,0, .4);
+    margin: 0px;
+    margin-bottom: 120px;
 
+  }
+  // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
+  .tagline {
+    font-family: monospace;
+    font-size: 3.8em;
+    color: gold;
+    text-align: center;
+    word-wrap: break-word;
+    text-shadow: 2px 2px #E14848;
+    position: relative;
+    bottom: 30px;
+  }
+  // "PLUG-IN" TEXT
+  #plug-hide-text {
+    display: none;
+  }
+
+  #plug:hover {
+    font-size: 1.2em;
+  }
+
+  #plug:hover #plug-hide-text {
+    font-family: arial;
+    text-shadow: 2px 2px #E14848;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    width: 30%;
+    left: 35%;
+    bottom: 50px;
+    opacity: 4;
+    margin-bottom: 0px;
+  }
+
+  // "CONNECT" TEXT
+  #connect:hover {
+    font-size: 1.2em;
+
+  }
+
+  #connect-hide-text {
+    display: none;
+  }
+
+  #connect:hover #connect-hide-text {
+    font-family: arial;
+    text-shadow: 2px 2px #E14848;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    width: 30%;
+    left: 35%;
+    bottom: 50px;
+    opacity: 4;
+  }
+
+  // "CLICK TO JAM LIVE" TEXT
+  #link-to-video {
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    position: relative;
+    bottom: 15px;
+  }
+
+  #link-to-video:hover {
+    font-size: 1.5em;
+  }
+
+  // ALL BUTTONS ON HOME/SHOW PAGE
+  .callbutt {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 30px;
+    display: inline-block;
+    margin: 15px 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #1abc9c;
+    color: #fff;
+    padding: 25px 40px 25px 30px;
+    border-radius: 10px;
+  }
+
+  .hidden-login-div {
+    display: none;
+
+  }
+
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    width: 450px;
+    height: 350px;
+    background-color: #468189;
+    border-radius: 15px;
+    border: 1px solid black;
+    z-index: 10;
+  }
+
+  .call-buttons-container {
+    margin-left: 130px;
+  }
+
+  .callee-container {
+    margin-bottom: 20px;
+  }
+
+  .fieldset {
+    background-color: #468189;
+    border-radius: 15px;
+    border: 1px solid black;
+    opacity: .97;
+    height: 600px;
+
+  }
+
+  .login-button-link-div {
+    position: relative;
+    width: 30%;
+    left: 60%;
+  }
+
+  #login-button {
+    position: relative;
+
+  }
+
+  #registerButt {
+    position: relative;
+    left: 72%;
+  }
+  // LOGIN MESSAGE TEXT
+  #output1 {
+    font-family: arial;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: gold;
+    text-align: center;
+    text-shadow: 2px 2px #E14848;
+  }
+  // REGISTRATION MESSAGE TEXT
+  #output2 {
+    font-family: arial;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: gold;
+    text-align: center;
+    text-shadow: 2px 2px #E14848;
+  }
+
+  // VIDEO INITALIZED MESSAGES
+  #messages {
+    font-family: arial;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: gold;
+    text-shadow: 2px 2px #E14848;
+
+  }
+  // ALL TEXT WITHIN CALL INTERFACE
+  .calltext {
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 5px;
+    color: gold;
+    text-shadow: 2px 2px #E14848;
+  }
+
+  #start-session {
+    font-size: 60px;
+  }
+
+  .show-page-container {
+    position: relative;
+    height: 500px;
+    bottom: 100px;
+  }
+
+  .secondary-background-image {
+    border: 1px solid red;
+    height: 500px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #login-button {
+    position: relative;
+    bottom: 97px;
+  }
+  // REGISTRATION FORM ON HOME/REGISTRATION PAGE
+  form#registration {
+    max-width: 500px;
+    padding: 10px 20px;
+    background-color: #468189;
+    margin: 10px auto;
+    padding: 22px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+  #registration button {
+      position: relative;
+      display: block;
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      margin: 0 auto;
+      background: #1abc9c;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      border: 1px solid #16a085;
+      border-width: 1px 1px 3px;
+      margin-bottom: 10px;
+  }
+
+  #registration input[type="text"] {
+    padding: 10px;
+    border: solid 1px #fff;
+    box-shadow: inset 1px 1px 2px 0 #707070;
+    transition: box-shadow 0.3s;
+    font-size: 20px;
+  }
+  #registration input[type="text"]:focus,
+  #registration input[type="text"].focus {
+    box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  }
+
+  #registration input[type="password"] {
+    padding: 10px;
+    border: solid 1px #fff;
+    box-shadow: inset 1px 1px 2px 0 #707070;
+    transition: box-shadow 0.3s;
+    font-size: 20px;
+  }
+  #registration input[type="password"]:focus,
+  #registration input[type="password"].focus {
+    box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  }
+
+  #registration p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  #remote-container {
+    width: 40%;
+  }
+
+  #local-container {
+    width: 40%;
+  }
+
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
 
 }
