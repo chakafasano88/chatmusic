@@ -1,7 +1,173 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-//
+// HEADER STYLING
+#ensemble {
+  font-family: 'Pacifico', cursive;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px #E14848;
+  height: 140px;
+  // background-color: rgba(225,223,0, .4);
+  margin: 0px;
+  margin-bottom: 120px;
+
+}
+
+// CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
+.tagline {
+  font-family: monospace;
+  font-size: 3.5em;
+  color: gold;
+  text-align: center;
+  word-wrap: break-word;
+  text-shadow: 2px 2px #E14848;
+  position: relative;
+  bottom: 30px;
+}
+// "PLUG-IN" TEXT
+#plug-hide-text {
+  display: none;
+}
+
+#plug:hover {
+  font-size: 1.2em;
+}
+
+#plug:hover #plug-hide-text {
+  font-family: arial;
+  text-shadow: 2px 2px #E14848;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  width: 30%;
+  left: 35%;
+  bottom: 50px;
+  opacity: 4;
+  margin-bottom: 0px;
+}
+
+// "CONNECT" TEXT
+#connect:hover {
+  font-size: 1.2em;
+
+}
+
+#connect-hide-text {
+  display: none;
+}
+
+#connect:hover #connect-hide-text {
+  font-family: arial;
+  text-shadow: 2px 2px #E14848;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  width: 30%;
+  left: 35%;
+  bottom: 50px;
+  opacity: 4;
+}
+
+// "CLICK TO JAM LIVE" TEXT
+#link-to-video {
+  text-align: center;
+  text-decoration: none;
+  color: gold;
+  position: relative;
+  bottom: 15px;
+}
+
+#link-to-video:hover {
+  font-size: 1.2em;
+}
+
+// ALL BUTTONS ON HOME/SHOW PAGE
+.callbutt {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #1abc9c;
+  color: #fff;
+  padding: 25px 60px 25px 120px;
+}
+
+fieldset {
+  background-color: #468189;
+  border: #E14848;
+  border-radius: 20px;
+}
+
+.login-button {
+  position: relative;
+  width: 30%;
+  left: 50%;
+}
+
+.register-button {
+  position: relative;
+  width: 30%;
+  left: 50%;
+
+}
+
+#output1 {
+  font-family: arial;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px #E14848;
+}
+
+#output2 {
+  font-family: arial;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px #E14848;
+}
+
+// VIDEO INITALIZED MESSAGES
+#messages {
+  font-family: arial;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-shadow: 2px 2px #E14848;
+
+}
+// ALL TEXT WITHIN CALL INTERFACE
+.calltext {
+  font-family: 'Pacifico', cursive;
+  position: relative;
+  font-size: 5em;
+  letter-spacing: 5px;
+  color: gold;
+  text-shadow: 2px 2px #E14848;
+}
+// REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
     max-width: 500px;
     padding: 10px 20px;
@@ -55,140 +221,4 @@ form#registration {
 
 #registration p {
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#modal {
-  display: none;
-  position: absolute;
-
-}
-
-#ensemble {
-  font-family: 'Pacifico', cursive;
-  position: relative;
-  font-size: 5em;
-  letter-spacing: 5px;
-  color: gold;
-  text-align: center;
-  text-shadow: 2px 2px #E14848;
-  height: 140px;
-  // background-color: rgba(225,223,0, .4);
-  margin: 0px;
-  margin-bottom: 120px;
-
-}
-
-.tagline {
-  font-family: monospace;
-  font-size: 3.5em;
-  color: gold;
-  text-align: center;
-  word-wrap: break-word;
-  text-shadow: 2px 2px #E14848;
-  position: relative;
-  bottom: 30px;
-}
-
-#link-to-video {
-  text-align: center;
-  text-decoration: none;
-  color: gold;
-  position: relative;
-  bottom: 15px;
-}
-
-#plug-hide-text {
-  display: none;
-}
-
-#plug:hover {
-  font-size: 1.2em;
-}
-
-#plug:hover #plug-hide-text {
-  font-family: arial;
-  text-shadow: 2px 2px #E14848;
-  display: block;
-  position: relative;
-  font-size: 25px;
-  width: 30%;
-  left: 35%;
-  bottom: 50px;
-  opacity: 4;
-  margin-bottom: 0px;
-}
-
-
-#connect:hover {
-  font-size: 1.2em;
-
-}
-
-#connect-hide-text {
-  display: none;
-}
-
-#connect:hover #connect-hide-text {
-  font-family: arial;
-  text-shadow: 2px 2px #E14848;
-  display: block;
-  position: relative;
-  font-size: 25px;
-  width: 30%;
-  left: 35%;
-  bottom: 50px;
-  opacity: 4;
-}
-
-#link-to-video:hover {
-  font-size: 1.2em;
-}
-
-.callbutt {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 25px 80px;
-  display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #1abc9c;
-  color: #fff;
-  padding: 25px 60px 25px 120px;
-}
-
-.hide-show-container {
-}
-
-legend {
-  border: 1px solid black;
-}
-
-fieldset {
-  background-color: #468189;
-  border: #E14848;
-  border-radius: 20px;
-}
-
-.login-button {
-  position: relative;
-  width: 30%;
-  left: 50%;
-}
-
-.register-button {
-  position: relative;
-  width: 30%;
-  left: 50%;
-
 }

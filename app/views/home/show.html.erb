@@ -1,6 +1,6 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
 <div class="register-button">
-  <button class="callbutt" id="modalButt" type="button" name="button">Register Account!</button>
+  <button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
 </div>
 <div class="login-button">
     <form id="login">
@@ -8,15 +8,16 @@
     <input value="" placeholder="PASSWORD" type="password" name="user_password" />
     <button class="callbutt">Login</button>
   </form>
-
   <br><br>
+  <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
   <div id="output2"></div>
 </div>
 
 <!-- ==================== CALL FIELD ========================= -->
+<h2 class="calltext">Start A Session!</h2>
 <div class="hide-show-container">
   <fieldset>
-    <legend>Call Management</legend>
+    <legend class="calltext">Call Management</legend>
 
     <!-- User input: Callee field. -->
     <span class="calltext" >Callee:</span> <input type="text" id="callee"/>
@@ -44,7 +45,8 @@
   </fieldset>
 
   <!-- MEDIA CONTAINERS -->
-  Remote video: <div id="remote-container"></div>
-
-  Local video: <div id="local-container"></div>
+  <p class="calltext">Remote video:</p>
+   <div id="remote-container"></div>
+  <p class="calltext" >Local video:</p>
+   <div id="local-container"></div>
 </div>
