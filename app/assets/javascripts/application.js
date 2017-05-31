@@ -66,9 +66,8 @@ console.log("DOM fully loaded and parsed");
         .catch(error=>{
           console.log('Registraion Failed')
         })
-      })
-
-  }
+      });
+  };
 
 //====================== LOGIN PEOPLE ====================
 
@@ -85,7 +84,7 @@ console.log("DOM fully loaded and parsed");
         },
         ()=>output2.innerHTML = "Login failed",
       )
-    })
+    });
   }
 
 // ============= LOGIN END =================
@@ -175,6 +174,14 @@ console.log("DOM fully loaded and parsed");
     document.getElementById("end-call").disabled = false;
   };
 
+  var callEndElement = document.getElementById('callEnd')
+    callEndElement.addEventListener('click', endCall)
+    // End a call.
+  function endCall() {
+      // Tell Kandy to end the call.
+      kandy.call.endCall(callId);
+  };
+
   document.getElementById("registerButt").onclick = function() {
     window.location = "/home/register";
   };
@@ -190,14 +197,6 @@ console.log("DOM fully loaded and parsed");
 
   span.onclick = function() {
     modal.style.display = "none";
-  };
-
-  var callEndElement = document.getElementById('callEnd')
-    callEndElement.addEventListener('click', endCall)
-    // End a call.
-  function endCall() {
-      // Tell Kandy to end the call.
-      kandy.call.endCall(callId);
   };
 
 

@@ -14,18 +14,10 @@
  *= require_self
  */
 
-p.navbar-text.pull-right {
-  border: 1px solid black;
-  height: 100px;
-}
-
 body {
 background-image: url('sun.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+overflow-x: hidden;
 
-}
-
-.big-button {
-  opacity: .9;
 }
