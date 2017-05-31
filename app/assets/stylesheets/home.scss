@@ -8,76 +8,44 @@
   position: relative;
   font-size: 5em;
   letter-spacing: 5px;
-  color: gold;
+  color: #01FDF6;
   text-align: center;
-  text-shadow: 2px 2px #E14848;
   height: 140px;
   margin: 0px;
   margin-bottom: 120px;
-
 }
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
+  position: relative;
+  right: 20%;
   font-family: monospace;
   font-size: 3.8em;
-  color: gold;
+  color: #EF7B45;
   text-align: center;
   word-wrap: break-word;
-  text-shadow: 2px 2px #E14848;
   position: relative;
-  bottom: 30px;
-}
-// "PLUG-IN" TEXT
-#plug-hide-text {
-  display: none;
+  top: 150px;
 }
 
-#plug:hover {
-  font-size: 1.2em;
-}
-
-#plug:hover #plug-hide-text {
-  font-family: arial;
-  text-shadow: 2px 2px #E14848;
-  display: block;
+.index-content {
+  color: white;
+  font-family: 'Dosis';
+  text-align: justify;
+  font-size: 2em;
+  width: 35%;
   position: relative;
-  font-size: 25px;
-  width: 30%;
   left: 35%;
-  bottom: 50px;
-  opacity: 4;
-  margin-bottom: 0px;
+  top: 100px;
 }
-
-// "CONNECT" TEXT
-#connect:hover {
-  font-size: 1.2em;
-
-}
-
-#connect-hide-text {
-  display: none;
-}
-
-#connect:hover #connect-hide-text {
-  font-family: arial;
-  text-shadow: 2px 2px #E14848;
-  display: block;
-  position: relative;
-  font-size: 25px;
-  width: 30%;
-  left: 35%;
-  bottom: 50px;
-  opacity: 4;
-}
-
 // "CLICK TO JAM LIVE" TEXT
 #link-to-video {
-  text-align: center;
-  text-decoration: none;
-  color: gold;
   position: relative;
+  left: 20%;
+  font-family: 'Francois One';
+  text-decoration: none;
+  color: #01FDF6;
   bottom: 15px;
+  font-weight: 800;
 }
 
 #link-to-video:hover {
@@ -92,7 +60,7 @@
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 25px 30px;
+  padding: 15px 15px;
   display: inline-block;
   margin: 15px 40px;
   text-transform: uppercase;
@@ -105,7 +73,7 @@
   transition: all 0.3s;
   background: #1abc9c;
   color: #fff;
-  padding: 25px 40px 25px 30px;
+  padding: 15px 20px 15px 15px;
   border-radius: 10px;
 }
 
@@ -138,10 +106,18 @@
 }
 
 .fieldset {
-  background-color: #468189;
+  position: relative;
+  background-color: #CBBAED;
   border-radius: 15px;
-  border: 1px solid black;
-  opacity: .97;
+  border: 1px solid white;
+  opacity: .9;
+}
+
+.fieldset-message {
+  background-color: #CBBAED;
+  border-radius: 15px;
+  border: 1px solid white;
+  // opacity: .9;
 }
 
 .login-button-link-div {
@@ -196,8 +172,7 @@
   position: relative;
   font-size: 5em;
   letter-spacing: 5px;
-  color: gold;
-  text-shadow: 2px 2px #E14848;
+  color: orange;
 }
 
 #start-session {
@@ -219,7 +194,7 @@
 
 #login-button {
   position: relative;
-  bottom: 97px;
+  bottom: 78px;
 }
 
 #modal-button {

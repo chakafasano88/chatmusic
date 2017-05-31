@@ -6,5 +6,6 @@ Rails.application.routes.draw do
    root to: "home#index"
    get 'home/show'
    get 'home/register'
+   get 'home/info'
 
 end
