@@ -114,11 +114,11 @@
 
 .fieldset-message {
   position: relative;
-  background-color: #CBBAED;
+  background-color: #9CFFFA;
   border-radius: 5px;
-  border: 1px solid white;
   bottom: 10px;
   width: 35%;
+  margin-left: 20px;
 }
 
 // VIDEO INITALIZED MESSAGES
@@ -133,9 +133,34 @@
 
 #start-session {
   position: relative;
-  bottom: 130px;
+  bottom: 180px;
   font-size: 60px;
   color: #01FDF6;
+  font-weight: 800;
+
+}
+
+#show-description {
+  position: relative;
+  bottom: 240px;
+
+}
+
+input#callee {
+
+  padding: 7px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  font-size: 20px;
+}
+
+.musician-username-div {
+  position: relative;
+  bottom: 20px;
+  margin-left: 20px;
+
+
 }
 
 #index-button {

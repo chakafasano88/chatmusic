@@ -23,12 +23,16 @@
 
     <!-- ==================== CALL FIELD ========================= -->
 
-      <h2 id="start-session" class="calltext">Start Session!</h2>
+<h2 id="start-session" class="calltext">Start Session!</h2>
+  <div id="show-description" class="calltext">Call a fellow musician, and start a live session!</div>
 
     <div class="call-div-container">
-      <legend class="calltext">Call Management</legend>
+
       <!-- User input: Callee field. -->
-      <span class="calltext" >Collaborater Name:</span> <input type="text" id="callee"/>
+    <div class="musician-username-div">
+      <span class="calltext" >Musician Username:</span>
+      <input type="text" size="51" style="text-align: center" id="callee"/>
+    </div>
 
           <!-- MAKE A CALL -->
       <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
@@ -36,21 +40,22 @@
       <!-- ACCEPT A CALL -->
       <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
 
+      <!-- END A CALL -->
+      <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
+
       <!-- TOGGLE VIDEO -->
       <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
 
-      <!-- END A CALL -->
-      <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
     </div>
     <br>
     <br>
       <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
-      <fieldset class="fieldset-message">
+      <div class="fieldset-message">
         <legend class="calltext">Messages</legend>
 
         <!-- Message output container. -->
         <div id="messages"> </div>
-      </fieldset>
+      </div>
 
     <!-- MEDIA CONTAINERS -->
     <br>
