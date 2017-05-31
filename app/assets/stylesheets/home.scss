@@ -43,7 +43,7 @@
   margin-right: -10px;
 }
 
-#learn-link {
+#jam-now {
   position: relative;
   top: 100px;
   left: 44%;
@@ -285,19 +285,17 @@ form#registration {
 }
 
 #registration button {
-    position: relative;
-    display: block;
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    margin: 0 auto;
-    background: #1abc9c;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    width: 100%;
-    border: 1px solid #16a085;
-    border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;  margin: 0 auto;
+  background: #EC368D;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border-color: #00893C;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
 }
 
 #registration input[type="text"] {
