@@ -1,63 +1,63 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
-<button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
-<!-- LOGIN LINK -->
-<div class="login-button-link-div">
-  <button id="login-button" class="callbutt login-button-link">Login</button>
-  <br><br>
-  <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
-</div>
+<div class="show-page-filter">
+  <div class="show-page-content">
+    <button class="callbutt" id="registerButt" type="button" name="button">Register Account!</button>
+    <!-- LOGIN LINK -->
+    <div class="login-button-link-div">
+      <button id="login-button" class="callbutt login-button-link">Login</button>
+      <br><br>
+      <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
+    </div>
 
-<div id="modal" class="hidden-login-div">
-  <form id="login">
-    <span class="close">&times;</span>
-    <input value="" placeholder="USERNAME"  type="text" name="user_name" />
-    <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+    <div id="modal" class="hidden-login-div">
+      <form id="login">
+        <span class="close">&times;</span>
+        <input value="" placeholder="USERNAME"  type="text" name="user_name" />
+        <input value="" placeholder="PASSWORD" type="password" name="user_password" />
+        <br>
+        <br>
+        <button id="modal-button" class="callbutt">Login</button>
+      </form>
+      <div id="output2"></div>
+    </div>
+
+    <!-- ==================== CALL FIELD ========================= -->
+
+      <h2 id="start-session" class="calltext">Start Session!</h2>
+
+    <div class="call-div-container">
+      <legend class="calltext">Call Management</legend>
+      <!-- User input: Callee field. -->
+      <span class="calltext" >Collaborater Name:</span> <input type="text" id="callee"/>
+
+          <!-- MAKE A CALL -->
+      <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
+
+      <!-- ACCEPT A CALL -->
+      <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
+
+      <!-- TOGGLE VIDEO -->
+      <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
+
+      <!-- END A CALL -->
+      <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
+    </div>
     <br>
     <br>
-    <button id="modal-button" class="callbutt">Login</button>
-  </form>
-  <div id="output2"></div>
-</div>
+      <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
+      <fieldset class="fieldset-message">
+        <legend class="calltext">Messages</legend>
 
-<!-- ==================== CALL FIELD ========================= -->
-<div class="show-page-container">
-  <h2 id="start-session" class="calltext">Start Session!</h2>
+        <!-- Message output container. -->
+        <div id="messages"> </div>
+      </fieldset>
 
-  <fieldset class="fieldset">
-    <legend class="calltext">Call Management</legend>
-
-    <!-- User input: Callee field. -->
-  <div class="callee-container">
-    <span class="calltext" >Collaborater Name:</span> <input type="text" id="callee"/>
+    <!-- MEDIA CONTAINERS -->
+    <br>
+    <br>
+    <p class="calltext">Remote video:</p>
+     <div id="remote-container"></div>
+    <p class="calltext" >Local video:</p>
+     <div id="local-container"></div>
   </div>
-  <div class="call-buttons-container">
-        <!-- MAKE A CALL -->
-    <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
-
-    <!-- ACCEPT A CALL -->
-    <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
-
-    <!-- TOGGLE VIDEO -->
-    <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
-
-    <!-- END A CALL -->
-    <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
-
-  </div>
-
-  </fieldset>
-
-  <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
-  <fieldset class="fieldset-message">
-      <legend class="calltext">Messages</legend>
-
-      <!-- Message output container. -->
-      <div id="messages"> </div>
-  </fieldset>
-
-  <!-- MEDIA CONTAINERS -->
-  <p class="calltext">Remote video:</p>
-   <div id="remote-container"></div>
-  <p class="calltext" >Local video:</p>
-   <div id="local-container"></div>
 </div>

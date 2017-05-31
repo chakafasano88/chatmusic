@@ -4,27 +4,22 @@
 
 // HEADER STYLING
 #ensemble {
-  font-family: 'Josefin Sans', cursive;
   position: relative;
-  font-size: 5em;
-  letter-spacing: 5px;
+  left: 22%;
+  font-family: 'Francois One';
+  text-decoration: none;
   color: #01FDF6;
-  text-align: center;
-  height: 140px;
-  margin: 0px;
-  margin-bottom: 120px;
+  bottom: 15px;
+  font-weight: 800;
 }
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
   position: relative;
   right: 20%;
   font-family: monospace;
-  font-size: 3.8em;
-  color: #EF7B45;
+  font-size: 4.5em;
   text-align: center;
-  word-wrap: break-word;
-  position: relative;
-  top: 150px;
+  top: 170px;
 }
 
 .index-content {
@@ -32,24 +27,28 @@
   font-family: 'Dosis';
   text-align: justify;
   font-size: 2em;
+  word-spacing: -1px;
   width: 35%;
   position: relative;
   left: 35%;
   top: 100px;
 }
-// "CLICK TO JAM LIVE" TEXT
-#link-to-video {
+
+.index-container {
   position: relative;
-  left: 20%;
-  font-family: 'Francois One';
-  text-decoration: none;
-  color: #01FDF6;
-  bottom: 15px;
-  font-weight: 800;
+  bottom: 100px;
 }
 
-#link-to-video:hover {
-  font-size: 1.5em;
+#learn-link {
+  position: relative;
+  top: 100px;
+  left: 44%;
+  text-decoration: none;
+  height: 26px;
+  width: 120px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #EC368D;
 }
 
 // ALL BUTTONS ON HOME/SHOW PAGE
@@ -71,15 +70,15 @@
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background: #1abc9c;
+  background-color: #EC368D;
+  border-color: #00893C;
   color: #fff;
   padding: 15px 20px 15px 15px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .hidden-login-div {
   display: none;
-
 }
 
 #modal {
@@ -105,19 +104,44 @@
   margin-bottom: 20px;
 }
 
-.fieldset {
+// ALL TEXT WITHIN THE CALL FIELDSET
+.calltext {
+  font-family: 'Francois One';
   position: relative;
-  background-color: #CBBAED;
-  border-radius: 15px;
-  border: 1px solid white;
-  opacity: .9;
+  font-size: 5em;
+  color: white;
 }
 
 .fieldset-message {
+  position: relative;
   background-color: #CBBAED;
-  border-radius: 15px;
+  border-radius: 5px;
   border: 1px solid white;
-  // opacity: .9;
+  bottom: 10px;
+  width: 35%;
+}
+
+// VIDEO INITALIZED MESSAGES
+#messages {
+  position: relative;
+  font-family: arial;
+  position: relative;
+  font-size: 25px;
+  color: white;
+}
+
+
+#start-session {
+  position: relative;
+  bottom: 130px;
+  font-size: 60px;
+  color: #01FDF6;
+}
+
+#index-button {
+  position: relative;
+  top: 100px;
+  left: 43%;
 }
 
 .login-button-link-div {
@@ -154,29 +178,6 @@
   color: gold;
   text-align: center;
   text-shadow: 2px 2px #E14848;
-}
-
-// VIDEO INITALIZED MESSAGES
-#messages {
-  font-family: arial;
-  position: relative;
-  font-size: 25px;
-  letter-spacing: 5px;
-  color: gold;
-  text-shadow: 2px 2px #E14848;
-
-}
-// ALL TEXT WITHIN CALL INTERFACE
-.calltext {
-  font-family: 'Josefin Sans', cursive;
-  position: relative;
-  font-size: 5em;
-  letter-spacing: 5px;
-  color: orange;
-}
-
-#start-session {
-  font-size: 60px;
 }
 
 .show-page-container {

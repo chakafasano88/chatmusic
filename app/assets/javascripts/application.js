@@ -158,7 +158,7 @@ console.log("DOM fully loaded and parsed");
           log("Stopping send of video.");
           showVideo = false;
       } else {
-          kandy.call.startCallVideo(callId);
+        kandy.call.startCallVideo(callId);
           log("Starting send of video.");
           showVideo = true;
       };
