@@ -1,22 +1,25 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
+
 <div class="show-page-filter">
   <div class="show-page-content">
-    <button class="callbutt" id="registerButt" type="button" >Register Account!</button>
+    <button class="callbutt" id="registerButt" type="button" >Register Account</button>
     <!-- LOGIN LINK -->
     <div class="login-button-link-div">
       <button id="login-button" class="callbutt login-button-link">Login</button>
       <br><br>
       <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
     </div>
-
     <div id="modal" class="hidden-login-div">
+      <div id="output2"></div>
       <form id="login">
         <span class="close">&times;</span>
-        <input id="modal-input" value="" placeholder="USERNAME"  type="text" name="user_name" />
-        <input id="modal-input" value="" placeholder="PASSWORD" type="password" name="user_password" />
-        <button id="modal-button" class="callbutt">Login</button>
+        <input size="30" id="modal-input" placeholder="USERNAME"  type="text" name="user_name" />
+        <br>
+        <br>
+        <input size="30" class="modal-input-2" id="modal-input" placeholder="PASSWORD" type="password" name="user_password" />
+
+        <button id="modal-button" class="callbutt">Submit</button>
       </form>
-      <div id="output2"></div>
     </div>
 
     <!-- ==================== CALL FIELD ========================= -->

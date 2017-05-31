@@ -90,14 +90,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
   text-align: center;
   width: 450px;
-  height: 270px;
+  height: 320px;
   background-color: #F2F5EA;
   border-radius: 5px;
-  box-shadow: 4px 4px 1px grey;
+  box-shadow: 2px 3px 1px grey;
   z-index: 10;
+}
+
+.modal-input-2 {
+  position: relative;
+  left: 63px;
 }
 
 .call-div-container {
@@ -139,7 +143,7 @@
 // VIDEO INITALIZED MESSAGES
 #messages {
   position: relative;
-  font-family: 'Francois One';
+  font-family: 'Dosis';
   font-size: 25px;
   color: white;
 }
@@ -175,6 +179,7 @@ input#callee {
   border:none;
   border-bottom: 2px solid white;
   border-radius: 5px;
+
 }
 
 .musician-username-div {
@@ -199,13 +204,13 @@ input#callee {
 
 #login-button {
   position: relative;
-  left: 70px;
-  bottom: 50px;
+  left: 79%;
+  bottom: 80px;
 }
 
 #registerButt {
   position: relative;
-  left: 78%;
+  left: 80%;
 }
 
 #enter-span {
@@ -220,19 +225,21 @@ input#callee {
 }
 // LOGIN MESSAGE TEXT
 #output1 {
-  font-family: arial;
+  font-family: 'Dosis';
   position: relative;
-  font-size: 25px;
   letter-spacing: 5px;
   text-align: center;
+  font-size: 2.1em;
+
 }
 // REGISTRATION MESSAGE TEXT
 #output2 {
-  font-family: arial;
-  position: relative;
-  font-size: 25px;
-  letter-spacing: 5px;
-  text-align: center;
+  font-family: 'Dosis';
+  position: absolute;
+  margin-left: 25%;
+  font-size: 2.1em;
+  color: #FF299C;
+
 }
 
 .show-page-container {
@@ -248,54 +255,59 @@ input#callee {
   margin: 0px 0px 0px 0px;
 }
 
-
-#login-button {
-  position: relative;
-  bottom: 78px;
-}
-
+// MODAL BUTTON
 #modal-button {
   position: relative;
-
-
+  top: 140px;
+  right: 115px;
 }
 
 #modal-input {
   position: relative;
-  top: 200px;
+  top: 70px;
   padding: 8px;
   border: solid 1px #fff;
   box-shadow: inset 1px 1px 2px 0 #707070;
-  transition: box-shadow 0.3s;
-  font-size: 15px;
-  left: 10px;
-  background-color: rgba(#FFF, 0.5);
   border-radius: 5px;
 }
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
   max-width: 500px;
   padding: 10px 20px;
-  background-color: #468189;
+  background-color: #F2F5EA;
+  border-radius: 5px;
+  box-shadow: 2px 3px 1px grey;
   margin: 10px auto;
   padding: 22px;
   border-radius: 8px;
-  font-family: Georgia, "Roboto", Times, serif;
+  font-family: 'Francois One';
   text-align: center;
 }
 
 #registration button {
+  border: none;
+  font-family: 'Francois One';
+  font-size: 2.1em;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  display: inline-block;
+  margin: 15px 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
   position: relative;
-  display: block;
-  padding: 19px 39px 18px 39px;  margin: 0 auto;
-  background: #EC368D;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  width: 100%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #EC368D;
   border-color: #00893C;
-  border-width: 1px 1px 3px;
-  margin-bottom: 10px;
+  color: #fff;
+  padding: 15px 20px 15px 30px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 #registration input[type="text"] {
@@ -323,7 +335,9 @@ form#registration {
 }
 
 #registration p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Francois One';
+  color: #EC368D;
+  font-size: 1.5em;
 }
 
 #remote-container {
@@ -335,9 +349,12 @@ form#registration {
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+  position: relative;
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+  bottom: 1px;
 }
