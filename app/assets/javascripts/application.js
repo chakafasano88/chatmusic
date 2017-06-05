@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 document.addEventListener("DOMContentLoaded", function(event) {
 console.log("DOM fully loaded and parsed");
+
 
     // Setup Kandy to make and receive calls.
   kandy.setup({
@@ -85,7 +85,7 @@ console.log("DOM fully loaded and parsed");
         ()=>output2.innerHTML = "Login failed",
       )
     });
-  }
+  };
 
 // ============= LOGIN END =================
 
@@ -97,7 +97,7 @@ console.log("DOM fully loaded and parsed");
   // Variable to keep track of video display status.
   var showVideo = true;
 // ================== MAKE A CALL ===================
-  var makeCallButt = document.getElementById('makeCallButt')
+  var makeCallButt = document.getElementById('makeCallButt');
     makeCallButt.addEventListener("click", startCall);
 
   //  Make a call to the callee
@@ -107,7 +107,6 @@ console.log("DOM fully loaded and parsed");
     // Tell Kandy to make a call to callee.
     kandy.call.makeCall(callee, showVideo);
   };
-
   // Variable to keep track of the call.
   var callId;
 
@@ -175,6 +174,7 @@ console.log("DOM fully loaded and parsed");
   };
 
   var callEndElement = document.getElementById('callEnd')
+
     callEndElement.addEventListener('click', endCall)
     // End a call.
   function endCall() {
