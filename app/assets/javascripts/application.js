@@ -68,34 +68,6 @@ if (registration) {
       })
     });
   };
-  // if (registration) {
-  //   registration.addEventListener('submit', function(e) {
-  //     e.preventDefault()
-  //     var user = {
-  //       "user_id": e.target.user_id.value,
-  //       "user_first_name": e.target.user_first_name.value, // Optional
-  //       "user_last_name": e.target.user_last_name.value, // Optional
-  //       "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
-  //     }
-  //     // console.log(user)
-  //   fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=DAT1fd84286cf3649978264b5131b137ced', {
-  //       headers: {
-  //         'Accept': 'application/json',
-  //         'Content-Type': 'application/json'
-  //       },
-  //       method: "POST",
-  //       body: JSON.stringify(user)
-  //     })
-  //     .then(r => r.json())
-  //     .then(response=>{
-  //       console.log('Kandy says: ',response)
-  //       output1.innerHTML = response.message
-  //       window.location = "/home/show"
-  //     })
-  //     .catch(error=>{
-  //       console.log('Registraion Failed')
-  //     })
-  //   })
 
 //====================== LOGIN PEOPLE ====================
 
