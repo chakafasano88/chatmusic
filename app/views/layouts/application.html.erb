@@ -3,12 +3,14 @@
   <head>
     <title>ChatMusic</title>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'true' %>
     <link rel="icon" href="https://s-media-cache-ak0.pinimg.com/originals/fb/32/da/fb32da8ce21543afc691fd8d9125a6c0.png">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Francois+One" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <script type="text/javascript">
       var kandyKey = "<%= ENV['ENSEMBLE_API_KEY'] %>"
     </script>
@@ -19,7 +21,6 @@
 
     <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
     <body>
 
