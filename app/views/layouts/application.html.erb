@@ -9,6 +9,9 @@
      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript">
+      var kandyKey = "<%= ENV['KANDY_DAT'] %>"
+    </script>
     <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.10.1/kandy.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

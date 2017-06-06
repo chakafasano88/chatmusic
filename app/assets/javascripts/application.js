@@ -49,7 +49,7 @@ console.log("DOM fully loaded and parsed");
         "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
       }
       // console.log(user)
-      fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=DAT1fd84286cf3649978264b5131b137ced', {
+      fetch('https://api.kandy.io/v1.2/domains/users/user_id?key' + kandyKey , {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -71,7 +71,6 @@ console.log("DOM fully loaded and parsed");
 
 //====================== LOGIN PEOPLE ====================
 
-//GET https://api.kandy.io/v1.2/domains/users/accesstokens?key=DATfa8a1a2cf85448228810d29a77632335
   if (login) {
     login.addEventListener('submit', function (e) {
       e.preventDefault()
