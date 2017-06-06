@@ -22,6 +22,7 @@ Things you may want to cover:
   For this project I used the following languages:
   
   HTML5, CSS, JavaScript, JSON,
+
   Kandy IO API(Kandy's SDK allows the developer to easily implement live audio and video capabilities into his/her app).
 
 * Configuration
