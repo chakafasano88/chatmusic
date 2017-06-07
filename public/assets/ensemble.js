@@ -44,6 +44,7 @@ if (registration) {
          body: JSON.stringify(user)
        })
        .then(function(r){return r.json()})
+      //  Turns Json into an object
        .then(function(response){
          console.log("Kandy says: ",response);
          output1.innerHTML = response.message;
