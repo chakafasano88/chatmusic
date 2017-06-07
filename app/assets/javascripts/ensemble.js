@@ -20,6 +20,8 @@ console.log("DOM fully loaded and parsed");
   var login = document.querySelector('#login')
   var output1 = document.querySelector('#output1')
   var output2 = document.querySelector('#output2')
+  var currentLogin = document.querySelector('#current-user-login')
+
 
 
 //====================== REGISTER PEOPLE =================
@@ -45,7 +47,7 @@ if (registration) {
        .then(response=>{
          console.log('Kandy says: ',response)
          output1.innerHTML = response.message
-         window.location = "/home/show"
+        //  window.location = "/home/show"
        })
        .catch(error=>{
          console.log('u fuked up')

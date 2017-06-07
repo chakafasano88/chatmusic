@@ -138,7 +138,7 @@ overflow-x: hidden;
 
 .fieldset-message {
   position: relative;
-  background-color: rgba(#FFF, 0.5);
+  background-color: rgba(#FFF, 0.7);
   border-radius: 5px;
   bottom: 10px;
   width: 60%;
@@ -237,13 +237,14 @@ input#callee {
   letter-spacing: 5px;
   text-align: center;
   font-size: 2.1em;
+  color: #FF299C;
 
 }
 // REGISTRATION MESSAGE TEXT
 #output2 {
   font-family: 'Dosis';
   position: absolute;
-  margin-left: 25%;
+  margin-left: 30%;
   font-size: 2.1em;
   color: #FF299C;
 
@@ -364,4 +365,17 @@ form#registration {
   cursor: pointer;
   margin-right: 8px;
   bottom: 1px;
+}
+
+#back-button {
+  text-decoration: none;
+  position: relative;
+  bottom: 700px;
+  left: 82%;
+}
+
+#current-user-login {
+  font-family: 'Francois One';
+  color: #EC368D;
+  font-size: 1.5em;
 }
