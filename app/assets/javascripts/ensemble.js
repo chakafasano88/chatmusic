@@ -43,7 +43,7 @@ if (registration) {
          method: "POST",
          body: JSON.stringify(user)
        })
-       .then(function(r){r.json()})
+       .then(function(r){return r.json()})
        .then(function(response){
          console.log("Kandy says: ",response);
          output1.innerHTML = response.message;
