@@ -12,21 +12,21 @@ console.log("DOM fully loaded and parsed");
       listeners: {
           callInitiated: onCallInitiated,
           callIncoming: onCallIncoming,
-          callEstablished: onCallEstablished,
+          callEstablished: onCallEstablished
       }
   });
 
-  var registration = document.querySelector('#registration')
-  var login = document.querySelector('#login')
-  var output1 = document.querySelector('#output1')
-  var output2 = document.querySelector('#output2')
-  var currentLogin = document.querySelector('#current-user-login')
+  var registration = document.querySelector("#registration");
+  var login = document.querySelector("#login");
+  var output1 = document.querySelector("#output1");
+  var output2 = document.querySelector("#output2");
+  var currentLogin = document.querySelector("#current-user-login");
 
 
 
 //====================== REGISTER PEOPLE =================
 if (registration) {
-  registration.addEventListener('submit', function(e) {
+  registration.addEventListener("submit", function(e) {
      e.preventDefault()
      var user = {
        "user_id": e.target.user_id.value,
@@ -35,30 +35,30 @@ if (registration) {
        "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
      }
      // console.log(user)
-     fetch('https://api.kandy.io/v1.2/domains/users/user_id?key=' + kandyDat, {
+     fetch("https://api.kandy.io/v1.2/domains/users/user_id?key=" + kandyDat, {
          headers: {
-           'Accept': 'application/json',
-           'Content-Type': 'application/json'
+           "Accept": "application/json",
+           "Content-Type": "application/json"
          },
          method: "POST",
          body: JSON.stringify(user)
        })
        .then(function(r){r.json()})
        .then(function(response){
-         console.log('Kandy says: ',response)
+         console.log("Kandy says: ",response)
          output1.innerHTML = response.message
         //  window.location = "/home/show"
        })
        .catch(function(error){
-         console.log('u fuked up')
-      })
+         console.log("error")
+      });
     });
   };
 
 //====================== LOGIN PEOPLE ====================
 
   if (login) {
-    login.addEventListener('submit', function (e) {
+    login.addEventListener("submit", function (e) {
       e.preventDefault()
       kandy.login(
         kandyKey,
@@ -82,7 +82,7 @@ if (registration) {
   // Variable to keep track of video display status.
   var showVideo = true;
 // ================== MAKE A CALL ===================
-  var makeCallButt = document.getElementById('makeCallButt');
+  var makeCallButt = document.getElementById("makeCallButt");
     makeCallButt.addEventListener("click", startCall);
 
   //  Make a call to the callee
@@ -158,9 +158,9 @@ if (registration) {
     document.getElementById("end-call").disabled = false;
   };
 
-  var callEndElement = document.getElementById('callEnd')
+  var callEndElement = document.getElementById("callEnd")
 
-    callEndElement.addEventListener('click', endCall)
+    callEndElement.addEventListener("click", endCall)
     // End a call.
   function endCall() {
       // Tell Kandy to end the call.
