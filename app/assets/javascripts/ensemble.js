@@ -43,13 +43,13 @@ if (registration) {
          method: "POST",
          body: JSON.stringify(user)
        })
-       .then(r => r.json())
-       .then(response=>{
+       .then(function(r){r.json()})
+       .then(function(response){
          console.log('Kandy says: ',response)
          output1.innerHTML = response.message
         //  window.location = "/home/show"
        })
-       .catch(error=>{
+       .catch(function(error){
          console.log('u fuked up')
       })
     });
@@ -67,7 +67,7 @@ if (registration) {
         function(){
           output2.innerHTML = "Login succesful"
         },
-        ()=>output2.innerHTML = "Login failed",
+        function(){output2.innerHTML = "Login failed"},
       )
     });
   };
