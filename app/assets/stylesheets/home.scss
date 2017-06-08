@@ -87,11 +87,11 @@ overflow-x: hidden;
   padding: 15px 20px 15px 15px;
   border-radius: 5px;
 }
-
+// Hidden modal div
 .hidden-login-div {
   display: none;
 }
-
+// This is the visible modal div
 #modal {
   position: fixed;
   left: 50%;
@@ -105,7 +105,7 @@ overflow-x: hidden;
   box-shadow: 2px 3px 1px grey;
   z-index: 10;
 }
-
+// Modal input
 .modal-input-2 {
   position: relative;
   left: 63px;
