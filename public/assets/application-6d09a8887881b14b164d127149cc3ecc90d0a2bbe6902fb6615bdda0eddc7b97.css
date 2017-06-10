@@ -1,14 +1,12 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* line 4, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 body {
-background-image: image-url('sun.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-overflow-x: hidden;
+  background-image: url(/assets/sun-f0a6de1bc802ca9972c76c50032d31bb3ff4ab6f437fcad06f8a2b0b1b3a7b49.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
-// HEADER STYLING
+/* line 12, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #ensemble {
   position: relative;
   left: 22%;
@@ -18,7 +16,8 @@ overflow-x: hidden;
   bottom: 15px;
   font-weight: 800;
 }
-// CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
+
+/* line 22, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .tagline {
   position: relative;
   right: 20%;
@@ -28,6 +27,7 @@ overflow-x: hidden;
   top: 170px;
 }
 
+/* line 31, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .index-content {
   color: white;
   font-family: 'Dosis';
@@ -40,15 +40,17 @@ overflow-x: hidden;
   top: 100px;
 }
 
+/* line 43, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .index-container {
   position: relative;
   bottom: 100px;
-  background-color: rgba(#000,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding-bottom: 370px;
   margin-left: -10px;
   margin-right: -10px;
 }
 
+/* line 52, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #jam-now {
   position: relative;
   top: 100px;
@@ -62,7 +64,7 @@ overflow-x: hidden;
   background-color: #EC368D;
 }
 
-// ALL BUTTONS ON HOME/SHOW PAGE
+/* line 66, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .callbutt {
   border: none;
   font-family: 'Francois One';
@@ -87,18 +89,18 @@ overflow-x: hidden;
   padding: 15px 20px 15px 15px;
   border-radius: 5px;
 }
-// ======== Start Modal ==========
-// Hidden modal div
+
+/* line 92, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .hidden-login-div {
   display: none;
 }
-// This is the visible modal div
+
+/* line 96, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #modal {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  // text-align: center;
   width: 450px;
   height: 320px;
   background-color: #F2F5EA;
@@ -106,21 +108,22 @@ overflow-x: hidden;
   box-shadow: 2px 3px 1px grey;
   z-index: 10;
 }
-// Class for modal inputs
+
+/* line 110, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .modal-input-contianer {
   position: relative;
   margin-left: 7%;
   top: 100px;
-
 }
 
-// Modal submit button
+/* line 118, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #modal-button {
   position: relative;
   top: 120px;
   margin-left: 39%;
 }
-// Username and Password inputs on modal
+
+/* line 124, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #modal-input {
   padding: 8px;
   border: solid 1px #fff;
@@ -128,32 +131,33 @@ overflow-x: hidden;
   border-radius: 5px;
 }
 
-// Login button that opens modal
+/* line 132, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #login-button {
   position: relative;
   left: 79%;
   bottom: 80px;
 }
-// ======== End Modal ===========
 
+/* line 139, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .call-div-container {
   text-align: center;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-
 }
 
+/* line 147, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .call-buttons-container {
   position: relative;
   left: 25px;
 }
 
+/* line 152, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .callee-container {
   margin-bottom: 20px;
 }
 
-// ALL TEXT WITHIN THE CALL FIELDSET
+/* line 157, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .calltext {
   font-family: 'Francois One';
   position: relative;
@@ -161,18 +165,18 @@ overflow-x: hidden;
   color: white;
 }
 
+/* line 164, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .fieldset-message {
   position: relative;
-  background-color: rgba(#FFF, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   bottom: 10px;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-
 }
 
-// VIDEO INITALIZED MESSAGES
+/* line 176, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #messages {
   position: relative;
   font-family: 'Dosis';
@@ -180,7 +184,7 @@ overflow-x: hidden;
   color: white;
 }
 
-
+/* line 184, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #start-session {
   position: relative;
   bottom: 50px;
@@ -192,64 +196,72 @@ overflow-x: hidden;
   margin-left: 20%;
 }
 
+/* line 195, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #show-description {
   position: relative;
   bottom: 115px;
   width: 60%;
   margin-right: 20%;
   margin-left: 20%;
-
 }
 
+/* line 204, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 input#callee {
   padding: 7px;
   border: solid 1px #fff;
   box-shadow: inset 1px 1px 2px 0 #707070;
   transition: box-shadow 0.3s;
   font-size: 20px;
-  background-color: rgba(#FFF, 0.5);
-  border:none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
   border-bottom: 2px solid white;
   border-radius: 5px;
-
 }
 
+/* line 217, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .musician-username-div {
   position: relative;
   bottom: 20px;
   margin-left: 20px;
 }
 
+/* line 223, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #index-button {
   position: relative;
   top: 100px;
   left: 43%;
 }
 
+/* line 229, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .login-button-link-div {
   position: relative;
   width: 60%;
   margin-right: 20%;
   margin-left: 20%;
-
 }
 
+/* line 237, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registerButt {
   position: relative;
   left: 80%;
 }
 
+/* line 242, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #enter-span {
   color: #FF299C;
 }
 
+/* line 246, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #live-span {
-  color: #01FDF6;}
+  color: #01FDF6;
+}
 
+/* line 249, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #username-span {
   color: #FF299C;
 }
-// LOGIN MESSAGE TEXT
+
+/* line 253, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #output1 {
   font-family: 'Muli';
   position: relative;
@@ -258,7 +270,8 @@ input#callee {
   font-size: 2.1em;
   color: #FF299C;
 }
-// REGISTRATION MESSAGE TEXT
+
+/* line 262, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #output2 {
   font-family: 'Muli';
   position: relative;
@@ -268,6 +281,7 @@ input#callee {
   color: #FF299C;
 }
 
+/* line 271, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #modal-header {
   font-family: 'Dosis';
   position: absolute;
@@ -276,25 +290,27 @@ input#callee {
   font-size: 2.1em;
   color: #FF299C;
 }
-// Container for "Start Session"
+
+/* line 280, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .start-session-container {
   position: relative;
   bottom: 60px;
   height: 100px;
   border: 3px solid gray;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   margin-left: 25%;
   margin-right: 25%;
-  width: 50%
+  width: 50%;
 }
 
-
+/* line 292, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .show-page-container {
   position: relative;
   height: 500px;
   bottom: 100px;
 }
 
+/* line 298, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .secondary-background-image {
   border: 1px solid red;
   height: 500px;
@@ -302,7 +318,7 @@ input#callee {
   margin: 0px 0px 0px 0px;
 }
 
-// REGISTRATION FORM ON HOME/REGISTRATION PAGE
+/* line 306, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 form#registration {
   max-width: 500px;
   padding: 10px 20px;
@@ -316,6 +332,7 @@ form#registration {
   text-align: center;
 }
 
+/* line 319, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration button {
   border: none;
   font-family: 'Francois One';
@@ -342,6 +359,7 @@ form#registration {
   width: 100%;
 }
 
+/* line 345, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration input[type="text"] {
   padding: 10px;
   border: solid 1px #fff;
@@ -349,11 +367,14 @@ form#registration {
   transition: box-shadow 0.3s;
   font-size: 20px;
 }
+
+/* line 352, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration input[type="text"]:focus,
 #registration input[type="text"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
+/* line 357, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration input[type="password"] {
   padding: 10px;
   border: solid 1px #fff;
@@ -361,25 +382,31 @@ form#registration {
   transition: box-shadow 0.3s;
   font-size: 20px;
 }
+
+/* line 364, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration input[type="password"]:focus,
 #registration input[type="password"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
+/* line 369, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #registration p {
   font-family: 'Francois One';
   color: #EC368D;
   font-size: 1.5em;
 }
 
+/* line 375, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #remote-container {
   width: 40%;
 }
 
+/* line 379, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #local-container {
   width: 40%;
 }
 
+/* line 383, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 .close {
   position: relative;
   color: #000;
@@ -391,6 +418,7 @@ form#registration {
   bottom: 1px;
 }
 
+/* line 394, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #back-button {
   text-decoration: none;
   position: relative;
@@ -398,8 +426,39 @@ form#registration {
   left: 82%;
 }
 
+/* line 401, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/home.scss */
 #current-user-login {
   font-family: 'Francois One';
   color: #EC368D;
   font-size: 1.5em;
 }
+/* line 6, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/video.scss */
+.calltext {
+  font-size: 25px;
+}
+
+/* line 11, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/video.scss */
+.callbutt {
+  margin-left: 22px;
+}
+
+/* line 15, /Users/mattfasano/Desktop/Coding/chat_music/app/assets/stylesheets/video.scss */
+fieldset {
+  border: 5px solid black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

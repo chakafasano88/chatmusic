@@ -11,23 +11,26 @@
       <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
     </div>
     <div id="modal" class="hidden-login-div">
-      <div id="output2"></div>
+      <p id="modal-header">Login</p>
       <form id="login">
         <span class="close">&times;</span>
-        <input size="30" id="modal-input" placeholder="USERNAME"  type="text" name="user_name" />
-        <br>
-        <br>
-        <input size="30" class="modal-input-2" id="modal-input" placeholder="PASSWORD" type="password" name="user_password" />
-
+        <div class="modal-input-contianer">
+          <input size="60" id="modal-input" placeholder="Username"  type="text" name="user_name" class="modal-input-2" />
+          <br>
+          <br>
+          <input size="60" class="modal-input-2" id="modal-input" placeholder="Password" type="password" name="user_password" />
+        </div>
         <button id="modal-button" class="callbutt">Submit</button>
+        <div id="output2"></div>
+
       </form>
     </div>
 
     <!-- ==================== CALL FIELD ========================= -->
-
-<h2 id="start-session" class="calltext">Start Session!</h2>
+<div class="start-session-container">
+  <h2 id="start-session" class="calltext">Start Session!</h2>
+</div>
   <div id="show-description" class="calltext"><span id="enter-span">Enter</span> a fellow musician's <span id="username-span" >username</span> below, and start a <span id="live-span" >LIVE</span> session!</div>
-
     <div class="call-div-container">
 
       <!-- User input: Callee field. -->
