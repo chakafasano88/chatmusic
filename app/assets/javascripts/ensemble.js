@@ -80,6 +80,10 @@ if (registration) {
     document.getElementById("messages").innerHTML += "<div>" + message + "</div>";
   }
 
+function log(){
+
+}
+
   // Variable to keep track of video display status.
   var showVideo = true;
 // ================== MAKE A CALL ===================
