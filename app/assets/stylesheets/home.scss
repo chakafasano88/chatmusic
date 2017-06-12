@@ -60,9 +60,16 @@ overflow-x: hidden;
   font-size: 21px;
   padding-top: 10px;
   background-color: #EC368D;
+  border: 2px solid white;
 }
 
-// ALL BUTTONS ON HOME/SHOW PAGE
+a:hover {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+// ALL BUTTONS ON HOME/SHOW PAGE`
 .callbutt {
   border: none;
   font-family: 'Francois One';
@@ -82,10 +89,16 @@ overflow-x: hidden;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #EC368D;
-  border-color: #00893C;
+  border: 2px solid white;
   color: #fff;
   padding: 15px 20px 15px 15px;
   border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
 // ======== Start Modal ==========
 // Hidden modal div
@@ -132,7 +145,7 @@ overflow-x: hidden;
 #login-button {
   position: relative;
   left: 79%;
-  bottom: 80px;
+  bottom: 86px;
 }
 // ======== End Modal ===========
 // Container for all call related functionallity (buttons, inputs, messages)
