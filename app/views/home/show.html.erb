@@ -1,8 +1,8 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
-
 <div class="show-page-filter">
-  <div class="show-page-content">
-    <div id="current-user-login"></div>
+  <div class="nav-bar">
+    <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
+    <p id="icon-text">Ensemble</p>
     <button class="callbutt" id="registerButt" type="button" >Register Account</button>
     <!-- LOGIN LINK -->
     <div class="login-button-link-div">
@@ -10,7 +10,7 @@
       <br><br>
       <!-- OUTPUTS MESSAGES FOR LOGIN SUCCESS/FAILURE -->
     </div>
-
+   </div>
     <div id="modal" class="hidden-login-div">
       <p id="modal-header">Login</p>
       <form id="login">
@@ -19,29 +19,26 @@
           <input size="60" id="modal-input" placeholder="Username"  type="text" name="user_name" class="modal-input-2" />
           <br>
           <br>
-          <input size="60" class="modal-input-2" id="modal-input" placeholder="Password" type="password" name="user_password" />
+          <input size="60" id="modal-input" placeholder="Password" type="password" name="user_password" />
         </div>
         <button id="modal-button" class="callbutt">Submit</button>
         <div id="output2"></div>
-
       </form>
     </div>
     <!-- Contaner for "Start a Session" text -->
     <h2 id="start-session" class="calltext">Start A Session!</h2>
     <!-- Container for text below "Start a Session" -->
-  <div class="show-description-container">
-    <div id="show-description" class="calltext">
+    <div id="show-description" class="descrit calltext">
       <span id="enter-span">Enter</span> a musician's
       <span id="username-span" >username</span> below, and start a
       <span id="live-span" >LIVE</span> session!
     </div>
-  </div>
   <!-- ==================== CALL FIELD ========================= -->
 
   <div class="call-div-container">
       <!-- User input: Callee field. -->
     <div class="musician-username-div">
-      <span class="calltext" >Musician Username:</span>
+      <span id="musician-username-span" >Enter Reciever:</span>
       <input placeholder="username + @ensemble.gmail.com" type="text" size="45" style="text-align: center" id="callee"/>
     </div>
 
@@ -59,16 +56,15 @@
       <button class="callbutt" id="showVideo"><span></span>Toggle Video</button>
 
     </div>
-  </div>
     <br>
     <br>
       <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
       <div class="fieldset-message">
-        <div class="calltext">Call Sequence:</div>
+        <span id="call-sequence-span">Call Sequence:</span>
         <!-- Message output container. -->
         <div id="messages"> </div>
       </div>
-
+  </div>
     <!-- MEDIA CONTAINERS -->
     <br>
     <br>
@@ -76,5 +72,4 @@
      <div id="remote-container"></div>
     <p class="calltext" >Local video:</p>
      <div id="local-container"></div>
-  </div>
 </div>

@@ -1,13 +1,22 @@
 <!-- REGISTRATION FORM -->
+<div class="nav-bar">
+  <!-- FORM OUTPUT TEXT -->
+  <%= link_to 'Back to call page', home_show_path, :class => 'callbutt', :id => 'back-button' %>
+  <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
+  <p id="icon-text">Ensemble</p>
+</div>
 <form id="registration">
   <p>Username</p>
   <input type="text" name="user_id" size="35" style="text-align: center">
   <br>
+  <br>
   <p>First Name</p>
   <input type="text" name="user_first_name" size="35" style="text-align: center">
   <br>
+  <br>
   <p>Last Name</p>
   <input type="text" name="user_last_name" size="35" style="text-align: center">
+  <br>
   <br>
   <p>Password</p>
   <input id="password" type="password" name="user_password" size="35" style="text-align: center">
@@ -17,7 +26,3 @@
   <div id="output1"></div>
   <div id="output2"></div>
 </form>
-
-<!-- FORM OUTPUT TEXT -->
-
-  <%= link_to 'Back to call page', home_show_path, :class => 'callbutt', :id => 'back-button' %>
