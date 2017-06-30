@@ -125,7 +125,7 @@ a:hover {
   background-color: #EC368D;
   border: 2px solid #FFFDF7;
   color: #fff;
-  padding: 15px 20px 15px 15px;
+  padding: 18px 20px 15px 15px;
   border-radius: 5px;
 }
 
@@ -206,6 +206,7 @@ button:hover {
   margin-top: 10%;
   margin-bottom: 5%;
   display: inline-flex;
+  bottom: 30px;
 
 }
 // Container specific for callee input
@@ -224,19 +225,19 @@ button:hover {
 .fieldset-message {
   position: relative;
   border-radius: 5px;
-  bottom: 10px;
+  bottom: 60px;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  display: flex;
-  justify-content: center;
-
+  margin-bottom: 15%;
 }
 // the words "call sequence"
 #call-sequence-span {
   font-family: 'Francois One';
   color: #FF299C;
   font-size: 1.6em;
+  position: relative;
+  bottom: 50px;
 
 }
 
@@ -246,9 +247,11 @@ button:hover {
   position: relative;
   font-family: 'Dosis';
   font-size: 25px;
-  color: white;
+  color: #5a5a5a;
   width: 100%;
-  height: 100px;
+  background-color: rgba(255,250,250, .6);
+  margin-top: 3%;
+  overflow: hidden;
 }
 
 // The word "enter"
@@ -276,7 +279,7 @@ button:hover {
   margin-left: 20%;
   margin-right: 20%;
   width: 60%;
-  font-size: 3em;
+  font-size: 3.3em;
   color: #FFF;
   font-weight: 800;
   height: 100px;
@@ -400,23 +403,48 @@ input#callee {
   bottom: 1px;
 }
 
-.call-text-flex {
-  width: 100%;
+.video-container {
+  width: 90%;
   margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(255,250,250, .7);
+  height: 500px;
+  text-align: center;
+}
+
+.video-flex {
+  width: 100%;
+  height: 450px;
   display: flex;
   justify-content: center;
 }
 
+#video-header {
+  width: 100%;
+  height: 30px;
+  font-size: 3em;
+  color: #5a5a5a;
+}
+
 // Remote video container
 #local-container {
-  width: 20%;
-  margin-left: 30%;
+  position: relative;
+  width: 40%;
+  margin-left: 5%;
+  height: 400px;
+  position: relative;
+  top: 32px;
 }
 // Local video container
 #remote-container {
-  width: 50%;
-  margin-right: 30%;
+  width: 40%;
+  margin-right: 5%;
+  height: 400px;
+  position: relative;
+  top: 32px;
 }
+
 
 
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE

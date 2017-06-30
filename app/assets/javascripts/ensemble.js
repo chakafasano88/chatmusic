@@ -136,21 +136,6 @@ if (registration) {
       // Handle UI changes. Call no longer incoming.
     };
 
-  var videoShowElement = document.getElementById("showVideo")
-    videoShowElement.addEventListener("click", toggleVideo)
-    // Show or hide video, depending on current status.
-  function toggleVideo() {
-      if(showVideo) {
-          kandy.call.stopCallVideo(callId);
-          log("Stopping send of video.");
-          showVideo = false;
-      } else {
-        kandy.call.startCallVideo(callId);
-          log("Starting send of video.");
-          showVideo = true;
-      };
-  };
-
     // What to do when call is established.
   function onCallEstablished(call) {
       log("Call established.");
