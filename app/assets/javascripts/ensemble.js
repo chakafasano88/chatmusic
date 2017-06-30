@@ -18,11 +18,16 @@ console.log("DOM fully loaded and parsed");
 
   var registration = document.querySelector("#registration");
   var login = document.querySelector("#login");
+  // Output message for registration
   var output1 = document.querySelector("#output1");
+  // Output message "login succesful" or "login failed"
   var output2 = document.querySelector("#output2");
-  var currentLogin = document.querySelector("#current-user-login");
+  // Output message "processing"
+  var output3 = document.querySelector("#output3");
 
-
+    login.addEventListener("submit", function processLogin(){
+      output3.innerHTML = "Processing...";
+    });
 
 //====================== REGISTER PEOPLE =================
 if (registration) {
@@ -48,7 +53,7 @@ if (registration) {
        .then(function(response){
          console.log("Kandy says: ",response);
          output1.innerHTML = response.message;
-        //  window.location = "/home/show"
+
        })
        .catch(function(error){
          console.log("error");
@@ -58,20 +63,18 @@ if (registration) {
 
 //====================== LOGIN PEOPLE ====================
 
-  if (login) {
     login.addEventListener("submit", function (e) {
       e.preventDefault();
       kandy.login(
         kandyKey,
         e.target.user_name.value,
         e.target.user_password.value,
-        function(){
+        function loginSuccess(){
           output2.innerHTML = "Login succesful";
         },
-        function(){output2.innerHTML = "Login failed"},
+        function loginFailure(){output2.innerHTML = "Login failed"},
       )
     });
-  };
 
 // ============= LOGIN END =================
 
@@ -79,10 +82,6 @@ if (registration) {
   function log(message) {
     document.getElementById("messages").innerHTML += "<div>" + message + "</div>";
   }
-
-function log(){
-
-}
 
   // Variable to keep track of video display status.
   var showVideo = true;

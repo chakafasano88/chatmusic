@@ -1,9 +1,12 @@
 <!-- ============== REGISTER AND LOGIN BUTTONS ================ -->
 <div class="show-page-filter">
   <div class="nav-bar">
-    <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
-    <p id="icon-text">Ensemble</p>
+    <div class="icon-container">
+      <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
+      <a id="icon-text" href="/">Ensemble</a>
+    </div>
     <button class="callbutt" id="registerButt" type="button" >Register Account</button>
+    <span class="register-text">Don't have an account? Register now!</span>
     <!-- LOGIN LINK -->
     <div class="login-button-link-div">
       <button id="login-button" class="callbutt login-button-link">Login</button>
@@ -21,12 +24,13 @@
           <br>
           <input size="60" id="modal-input" placeholder="Password" type="password" name="user_password" />
         </div>
+        <div id="output3"></div>
         <button id="modal-button" class="callbutt">Submit</button>
         <div id="output2"></div>
       </form>
     </div>
     <!-- Contaner for "Start a Session" text -->
-    <h2 id="start-session" class="calltext">Start A Session!</h2>
+    <h2 id="start-session" class="calltext">Login to start a live session!</h2>
     <!-- Container for text below "Start a Session" -->
     <div id="show-description" class="descrit calltext">
       <span id="enter-span">Enter</span> a musician's
@@ -47,7 +51,7 @@
       <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
 
       <!-- ACCEPT A CALL -->
-      <button class="callbutt" type="button"  id="acceptCall"><span></span>Accept Call</button>
+      <button class="callbutt" type="button" id="acceptCall"><span></span>Accept Call</button>
 
       <!-- END A CALL -->
       <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
@@ -59,8 +63,8 @@
     <br>
     <br>
       <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
+      <div id="call-sequence-span">Call Sequence:</div>
       <div class="fieldset-message">
-        <span id="call-sequence-span">Call Sequence:</span>
         <!-- Message output container. -->
         <div id="messages"> </div>
       </div>
@@ -68,8 +72,10 @@
     <!-- MEDIA CONTAINERS -->
     <br>
     <br>
-    <p class="calltext">Remote video:</p>
-     <div id="remote-container"></div>
-    <p class="calltext" >Local video:</p>
-     <div id="local-container"></div>
+  <div class="call-text-flex">
+   <div id="remote-container"><p class="calltext">Remote video:</p>
+   </div>
+   <div id="local-container"><p class="calltext">Local video:</p>
+   </div>
+   </div>
 </div>

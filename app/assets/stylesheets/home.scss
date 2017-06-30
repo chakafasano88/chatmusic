@@ -21,8 +21,16 @@ margin: 0px;
   font-family: 'Francois One';
   text-decoration: none;
   color: #01FDF6;
-  bottom: 15px;
+  bottom: 10px;
   font-weight: 800;
+}
+
+.icon-container {
+  position: absolute;
+  width: 20%;
+  height: 100px;
+  top: 10px;
+
 }
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
@@ -83,6 +91,10 @@ margin: 0px;
   font-size: 2em;
   left: 75px;
   top: 22px;
+  text-decoration: none;
+  border-color: #FFF;
+  color: black;
+  box-shadow: none;
 }
 
 a:hover {
@@ -134,9 +146,9 @@ button:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 450px;
-  height: 320px;
-  background-color: #FFF;
+  width: 490px;
+  height: 360px;
+  background-color: #F2F5EA;
   border-radius: 5px;
   box-shadow: 2px 3px 1px grey;
   z-index: 10;
@@ -150,8 +162,10 @@ button:hover {
 
 // Modal submit button
 #modal-button {
-  position: relative;
-  top: 110px;
+  position: absolute;
+  top: 140px;
+  right: 34%;
+  top: 60%;
 }
 
 .modal-input-2 {
@@ -170,25 +184,20 @@ button:hover {
 // Login button that opens modal
 #login-button {
   position: relative;
-  left: 79%;
-  bottom: 86px;
+  left: 83%;
+  bottom: 108.5px;
 }
 // ======== End Modal ===========
 // Container for all call related functionallity (buttons, inputs, messages)
 .call-div-container {
   text-align: center;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 400px;
   background-color: rgba(255,250,250,.9);
   position: relative;
-  top: 50px;
-}
-
-.upper-container {
-  background-color: #FFEECF;
-  height: 100px;
+  top: 80px;
 }
 
 // Container specific to call buttons
@@ -214,13 +223,32 @@ button:hover {
 
 .fieldset-message {
   position: relative;
-  background-color: rgba(#FFF, 0.7);
   border-radius: 5px;
   bottom: 10px;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
+  display: flex;
+  justify-content: center;
 
+}
+// the words "call sequence"
+#call-sequence-span {
+  font-family: 'Francois One';
+  color: #FF299C;
+  font-size: 1.6em;
+
+}
+
+// Video initialzed messages. (When making a call,
+// messages update the current call process)
+#messages {
+  position: relative;
+  font-family: 'Dosis';
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  height: 100px;
 }
 
 // The word "enter"
@@ -229,17 +257,12 @@ button:hover {
 }
 // The word "live"
 #live-span {
-  color: #01FDF6;}
+  color: #FF299C;}
 // The word "username"
 #username-span {
   color: #FF299C;
 }
-// the words "call sequence"
-#call-sequence-span {
-  font-family: 'Francois One';
-  color: #FF299C;
-  font-size: 1.6em;
-}
+
 // the words "musician's username`"
 #musician-username-span {
   font-family: 'Francois One';
@@ -248,20 +271,12 @@ button:hover {
 
 }
 
-// Video initialzed messages. (When making a call, messages update the current call process)
-#messages {
-  position: relative;
-  font-family: 'Dosis';
-  font-size: 25px;
-  color: #01FDF6;
-}
-
 // Start Session object
 #start-session {
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
-  font-size: 4em;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+  font-size: 3em;
   color: #FFF;
   font-weight: 800;
   height: 100px;
@@ -273,12 +288,12 @@ button:hover {
 // Show description object
 #show-description {
   position: relative;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
   background-color: rgba(255,250,250,.9);
-  color: #C9C5CB;
-  top: 50px;
+  color: #5a5a5a;
+  top: 70px;
 }
 // Show description container
 .show-description-container {
@@ -313,7 +328,7 @@ input#callee {
 
 .nav-bar {
   width: 100%;
-  height: 90px;
+  height: 110px;
   background-color: rgba(255,250,250,.9);
 }
 
@@ -328,8 +343,16 @@ input#callee {
 #registerButt {
   position: relative;
   left: 80%;
+
 }
 
+.register-text {
+  font-family: 'Francois One';
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 9%;
+}
 // Login message text displayed on modal
 #output1 {
   font-family: 'Dosis';
@@ -343,8 +366,16 @@ input#callee {
 #output2 {
   font-family: 'Dosis';
   position: relative;
-  top: 110px;
+  top: 200px;
   font-size: 2.1em;
+  color: #FF299C;
+}
+
+#output3 {
+  font-family: 'Dosis';
+  position: relative;
+  top: 110px;
+  font-size: 1.1em;
   color: #FF299C;
 }
 // "Login" text on modal
@@ -369,13 +400,22 @@ input#callee {
   bottom: 1px;
 }
 
+.call-text-flex {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
 // Remote video container
-#remote-container {
-  width: 40%;
+#local-container {
+  width: 20%;
+  margin-left: 30%;
 }
 // Local video container
-#local-container {
-  width: 40%;
+#remote-container {
+  width: 50%;
+  margin-right: 30%;
 }
 
 
