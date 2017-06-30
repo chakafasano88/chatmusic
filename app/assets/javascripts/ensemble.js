@@ -26,7 +26,7 @@ console.log("DOM fully loaded and parsed");
   var output3 = document.querySelector("#output3");
 
     login.addEventListener("submit", function processLogin(){
-      output3.innerHTML = "Processing...";
+      output3.innerHTML = "Proccessing...";
     });
 
 //====================== REGISTER PEOPLE =================
