@@ -53,7 +53,6 @@ if (registration) {
        .then(function(response){
          console.log("Kandy says: ",response);
          output1.innerHTML = response.message;
-
        })
        .catch(function(error){
          console.log("error");
@@ -62,7 +61,6 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
-
     login.addEventListener("submit", function (e) {
       e.preventDefault();
       kandy.login(
@@ -71,6 +69,11 @@ if (registration) {
         e.target.user_password.value,
         function loginSuccess(){
           output2.innerHTML = "Login succesful";
+          output3.innerHTML = "";
+          var timer = function(){
+            modal.setAttribute("style", "display: none")
+          };
+          setTimeout(timer, 3000);
         },
         function loginFailure(){output2.innerHTML = "Login failed"},
       )
@@ -171,6 +174,7 @@ if (registration) {
 
   span.onclick = function() {
     modal.style.display = "none";
+    window.location.reload(true);
   };
 
 
