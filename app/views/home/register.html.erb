@@ -1,9 +1,13 @@
 <!-- REGISTRATION FORM -->
 <div class="nav-bar">
+  <div class="icon-container">
+    <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
+    <a id="icon-text" href="/">Ensemble</a>
+  </div>
   <!-- FORM OUTPUT TEXT -->
-  <%= link_to 'Back to call page', home_show_path, :class => 'callbutt', :id => 'back-button' %>
-  <%= link_to(image_tag("ensemble-icon.png", :class => "icon"),"/") %>
-  <p id="icon-text">Ensemble</p>
+  <%= button_to home_show_path, method: :get, :class => 'callbutt', :id => 'back-button'  do %>
+    Back
+  <% end %>
 </div>
 <form id="registration">
   <p>Username</p>

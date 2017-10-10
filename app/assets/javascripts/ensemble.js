@@ -61,23 +61,25 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
-    login.addEventListener("submit", function (e) {
-      e.preventDefault();
-      kandy.login(
-        kandyKey,
-        e.target.user_name.value,
-        e.target.user_password.value,
-        function loginSuccess(){
-          output2.innerHTML = "Login succesful";
-          output3.innerHTML = "";
-          var timer = function(){
-            modal.setAttribute("style", "display: none")
-          };
-          setTimeout(timer, 3000);
-        },
-        function loginFailure(){output2.innerHTML = "Login failed"},
-      )
-    });
+  login.addEventListener("submit", function (e) {
+    e.preventDefault();
+    kandy.login(
+      kandyKey,
+      e.target.user_name.value,
+      e.target.user_password.value,
+      function loginSuccess(){
+        output2.innerHTML = "Login succesful";
+        output3.innerHTML = "";
+        var timer = function(){
+          modal.setAttribute("style", "display: none")
+        };
+        setTimeout(timer, 3000);
+      },
+      function loginFailure(){output2.innerHTML = "Login failed"},
+    )
+  });
+
+
 
 // ============= LOGIN END =================
 
@@ -159,15 +161,17 @@ if (registration) {
       kandy.call.endCall(callId);
   };
 
-  document.getElementById("registerButt").onclick = function() {
+  document.querySelector("#register-butt").onclick = function() {
     window.location = "/home/register";
   };
 
   var loginButtElement = document.querySelector(".login-button-link")
   var loginModal = document.querySelector(".hidden-login-div")
+  let loginRegisterButts =  document.querySelector(".login-button-link-div");
+
 
     loginButtElement.onclick = function() {
-      loginModal.style.display = "block";
+      loginModal.style.display = "flex";
   };
 
   var span = document.getElementsByClassName("close")[0];

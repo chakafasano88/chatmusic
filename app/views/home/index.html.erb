@@ -1,13 +1,25 @@
 <!--LANDING PAGE TEXT -->
-<div class="index-container">
-  <div class="tagline">
-    <p id="ensemble">Ensemble</p>
-  </div>
+<div class="content-container">
+    <div class="parent1-container">
+      <div class="child1-container">
+        <div class="tagline">
+          <p id="ensemble">Ensemble</p>
+        </div>
+          <!-- <%= (image_tag("equalizer.png", :class => "equalizer-image")) %> -->
+          <%= (image_tag("mic.png", :class => "mic-image")) %>
 
-  <div class="index-content">
-    <p>A collaborative workspace for musicians to share music and jam
-    anywhere across the globe using  LIVE video streaming. </p>
-  </div>
-
-  <%= link_to 'Jam Now', home_show_path, :class => 'callbutt', :id => 'jam-now' %>
+      </div>
+    </div>
+    <div class="parent2-container">
+      <div class="child2-container">
+        <div class="index-content">
+          <h2 id="text">Jam with others in seconds</h2>
+          <h6 id="text">Ensemble connects musicians via live audio/video streaming</h6>
+        </div>
+        <%= button_to home_show_path, method: :get, :class => 'callbutt', :id => 'jam-now' do %>
+          Jam Now
+          <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
 </div>

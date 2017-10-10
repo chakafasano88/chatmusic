@@ -7,100 +7,166 @@
 }
 
 body {
-background-image: image-url('sun.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-overflow-x: hidden;
-margin: 0px;
+  background-color: #FFF;
+  margin: 0px;
+  padding-bottom: 70px;
+
+}
+
+.content-container {
+  background: #FFF;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 50;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.parent1-container {
+  height: 100%;
+  width: 50%;
+  background-color: #50d0ff;
+  padding: 50px;
+  display: flex;
+}
+
+.equalizer-image {
+
+}
+
+.parent2-container {
+  height: 100%;
+  width: 50%;
+  background-color: #ff7f50;
+  padding: 50px;
+  display: flex;
+}
+
+.child1-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.child2-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#text {
+  text-align: center;
+  margin: 20px;
+}
+
+h5#text {
+  color: rgba(255,255,255, .9)
 }
 
 // HEADER STYLING
 #ensemble {
   position: relative;
-  left: 22%;
   font-family: 'Francois One';
   text-decoration: none;
-  color: #01FDF6;
-  bottom: 10px;
+  color: #FFF;
   font-weight: 800;
+  margin-bottom: 8%;
 }
 
-.icon-container {
-  position: absolute;
-  width: 20%;
-  height: 100px;
-  top: 10px;
-
-}
 // CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
 .tagline {
-  position: relative;
-  right: 20%;
-  font-family: monospace;
+  font-family: 'montserrat';
   font-size: 4.6em;
-  text-align: center;
-  top: 170px;
 }
+
 // Landing page container for app description
 .index-content {
   color: white;
-  font-family: 'Dosis';
-  text-align: justify;
+  font-family: 'Francois One';
   font-size: 2.1em;
   word-spacing: -1px;
-  width: 35%;
-  position: relative;
-  left: 35%;
-  top: 180px;
+  text-align: left;
 }
-// Container for Title and description
-.index-container {
-  position: relative;
-  bottom: 100px;
-  background-color: rgba(#000,0.2);
-  padding-bottom: 370px;
-  margin-left: -10px;
-  margin-right: -10px;
-}
+
 // "JAM NOW" button
 #jam-now {
-  position: relative;
-  top: 220px;
-  left: 44%;
   text-decoration: none;
-  height: 26px;
-  width: 120px;
-  text-align: center;
-  font-size: 21px;
-  padding-top: 10px;
-  background-color: #EC368D;
+  font-size: 50px;
+  background-color: #FFF;
   border: 2px solid white;
+  width: 100%;
+  padding: 20px 80px;
+  color: #ff7f50;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+
+i.fa.fa-arrow-circle-o-down {
+  font-size: 60px;
+  padding: 4px 0 0 0;
+  margin-right: 10px;
+
+}
+
+.mic-image {
+  width: 30%;
+  height: 30%;
+  margin-right: 5%;
+}
+
+/* ======== SHOW PAGE ======= */
+
+.show-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.icon-container{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .icon {
-  position: absolute;
-  width: 40px;
-  height: 50px;
-  top: 17px;
-  left: 30px;
+  width: 80px;
+  height: 80px;
 }
 
 #icon-text {
-  position: absolute;
-  font-family: 'Dosis';
-  font-size: 2em;
-  left: 75px;
-  top: 22px;
+  font-family: 'Francois One';
+  font-size: 3.2em;
   text-decoration: none;
-  border-color: #FFF;
-  color: black;
+  color: #ff7f50;
   box-shadow: none;
+  margin-left: 20px;
+
 }
 
 a:hover {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  opacity: 1;
+}
+
+img.icon:hover {
+  border-color: none;
+}
+
+button:hover {
+  background-color: #ff7f50;
+  opacity: 1;
+  color: white;
 }
 
 // ALL BUTTONS ON HOME/SHOW PAGE`
@@ -113,7 +179,7 @@ a:hover {
   cursor: pointer;
   padding: 15px 15px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -122,18 +188,16 @@ a:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #EC368D;
-  border: 2px solid #FFFDF7;
-  color: #fff;
-  padding: 18px 20px 15px 15px;
+  background-color: #FFF;
+  border: 2px solid #ff7f50;
+  color: #ff7f50;
+  padding: 20px 85px;
   border-radius: 5px;
+  font-size: 20px;
+  opacity: .9;
+
 }
 
-button:hover {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
 // ======== Start Modal ==========
 // Hidden modal div
 .hidden-login-div {
@@ -146,72 +210,89 @@ button:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 490px;
-  height: 360px;
-  background-color: #F2F5EA;
+  width: 50%;
+  height: 60%;
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 2px 3px 1px grey;
   z-index: 10;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.modal-header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+// "Login" text on modal
+#modal-header {
+  font-family: 'Francois One';
+  letter-spacing: 5px;
+  font-size: 4em;
+  margin: 0 0 5% 40%;
+  color: #5a5a5a;
+}
+
+// Modal "exit" button
+.close {
+  position: relative;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 10px 0 0;
+}
+
 // Class for modal inputs
-.modal-input-contianer {
-  position: relative;
-  top: 100px;
-
-}
-
-// Modal submit button
-#modal-button {
-  position: absolute;
-  top: 140px;
-  right: 34%;
-  top: 60%;
-}
-
-.modal-input-2 {
-  position: relative;
-  left: 14px;
+.modal-input-container {
+  background-color: red;
+  width: inherit;
 }
 
 // Username and Password inputs on modal
 #modal-input {
-  padding: 8px;
+  padding: 22px;
+  font-size: 1em;
   border: solid 1px #fff;
   box-shadow: inset 1px 1px 2px 0 #707070;
   border-radius: 5px;
+  margin: 0 0 10% 0;
+  width: 100%;
+  height: 50%;
 }
 
 // Login button that opens modal
 #login-button {
-  position: relative;
-  left: 83%;
-  bottom: 112px;
+  border: 2px solid #ff7f50;
+}
+
+#register-butt {
+  border: 2px solid #ff7f50;
 }
 // ======== End Modal ===========
 // Container for all call related functionallity (buttons, inputs, messages)
-.call-div-container {
+.call-container {
+  width: 100%;
+  padding-top: 60px;
+  height: 450px;
+  background-color: rgb(250,235,215);
   text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 400px;
-  background-color: rgba(255,250,250,.9);
-  position: relative;
-  top: 80px;
+  box-shadow: 3px 3px 3px grey;
+
 }
 
 // Container specific to call buttons
 .call-buttons-container {
-  position: relative;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  display: inline-flex;
-  bottom: 30px;
-
+  margin: 50px 0 0 0;
 }
 // Container specific for callee input
 .callee-container {
-  margin-bottom: 20px;
 }
 
 // ALL TEXT WITHIN THE CALL FIELDSET
@@ -223,22 +304,16 @@ button:hover {
 }
 
 .fieldset-message {
-  position: relative;
   border-radius: 5px;
-  bottom: 60px;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 15%;
 }
 // the words "call sequence"
 #call-sequence-span {
   font-family: 'Francois One';
-  color: #FF299C;
+  color: #ff7f50;
   font-size: 1.6em;
-  position: relative;
-  bottom: 50px;
-
 }
 
 // Video initialzed messages. (When making a call,
@@ -249,7 +324,7 @@ button:hover {
   font-size: 25px;
   color: #5a5a5a;
   width: 100%;
-  background-color: rgba(255,250,250, .6);
+  background-color: #FFF;
   margin-top: 3%;
   overflow: hidden;
 }
@@ -269,52 +344,44 @@ button:hover {
 // the words "musician's username`"
 #musician-username-span {
   font-family: 'Francois One';
-  color: #FF299C;
+  color: #5a5a5a;
   font-size: 1.6em;
+}
 
+.h2-container {
+  width: 100%;
+  margin: 30px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 // Start Session object
 #start-session {
-  margin-left: 20%;
-  margin-right: 20%;
-  width: 60%;
+  width: 100%;
   font-size: 3.3em;
-  color: #FFF;
+  color: #5a5a5a;
   font-weight: 800;
-  height: 100px;
   text-align: center;
-  position: relative;
-  top: 30px;
 }
 
 // Show description object
-#show-description {
-  position: relative;
-  margin-left: 20%;
-  margin-right: 20%;
+#title-text {
+  font-family: 'Francois One';
   width: 60%;
-  background-color: rgba(255,250,250,.9);
-  color: #5a5a5a;
-  top: 70px;
-}
-// Show description container
-.show-description-container {
-  position: relative;
-  height: 100px;
-  margin-left: 35%;
-  margin-right: 35%;
-  width: 32.5%;
   text-align: center;
+  color: #5a5a5a;
+  opacity: .8;
 }
+
 // Musician username input
 input#callee {
   padding: 7px;
-  border: solid 1px #fff;
+  border: solid 1px #FFF;
   box-shadow: inset 1px 1px 2px 0 #707070;
-  transition: box-shadow 0.3s;
   font-size: 20px;
-  background-color: rgba(#FFF, 0.5);
+  background-color: #FFF;
   border:none;
   border-bottom: 2px solid white;
   border-radius: 5px;
@@ -322,31 +389,25 @@ input#callee {
 
 // Musician username container
 .musician-username-div {
-  position: inherit;
-  top: 20px;
-  right: 20px;
-  margin-left: 20px;
-  padding-top: 35px;
 }
 
 .nav-bar {
   width: 100%;
   height: 110px;
-  background-color: rgba(255,250,250,.9);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  background-color: rgb(250,235,215);
+  box-shadow: 2px 2px 2px 0 #707070;
 }
 
 // Login button which opens a modal to login
 .login-button-link-div {
-  position: relative;
-  width: 60%;
-  margin-right: 15%;
-  margin-left: 20%;
-}
-// Register button which redirects to registration page
-#registerButt {
-  position: relative;
-  left: 80%;
-
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .register-text {
@@ -354,7 +415,7 @@ input#callee {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-right: 75px;
+  margin-right: 46.8%;
 }
 // Login message text displayed on modal
 #output1 {
@@ -368,48 +429,22 @@ input#callee {
 // Registration message text
 #output2 {
   font-family: 'Dosis';
-  position: relative;
-  top: 210px;
   font-size: 2.1em;
-  color: #FF299C;
+  color: black;
 }
 
 #output3 {
   font-family: 'Dosis';
   position: relative;
-  top: 110px;
   font-size: 1.1em;
-  color: #FF299C;
-}
-// "Login" text on modal
-#modal-header {
-  font-family: 'Dosis';
-  position: absolute;
-  letter-spacing: 5px;
-  left: 40%;
-  font-size: 2.1em;
-  color: #FF299C;
-}
-
-// Modal "exit" button
-.close {
-  position: relative;
-  color: #000;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 8px;
-  bottom: 1px;
+  color: black;
 }
 
 .video-container {
-  width: 90%;
-  margin-top: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: rgba(255,250,250, .7);
-  height: 500px;
+  width: 100%;
+  background-color: rgb(250,235,215);
+  height: 650px;
+  box-shadow: 3px 3px 3px grey;
   text-align: center;
 }
 
@@ -422,7 +457,7 @@ input#callee {
 
 #video-header {
   width: 100%;
-  height: 30px;
+  height: 80px;
   font-size: 3em;
   color: #5a5a5a;
 }
@@ -434,7 +469,6 @@ input#callee {
   margin-left: 5%;
   height: 400px;
   position: relative;
-  top: 32px;
 }
 // Local video container
 #remote-container {
@@ -442,16 +476,13 @@ input#callee {
   margin-right: 5%;
   height: 400px;
   position: relative;
-  top: 32px;
 }
-
-
 
 // REGISTRATION FORM ON HOME/REGISTRATION PAGE
 form#registration {
-  max-width: 500px;
+  max-width: 80%;
   padding: 10px 20px;
-  background-color: #F2F5EA;
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 2px 3px 1px grey;
   margin: 10px auto;
@@ -481,12 +512,12 @@ form#registration {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #EC368D;
-  border-color: #00893C;
+  background-color: #50d0ff;
+  border-color: #50d0ff;
   color: #fff;
   padding: 15px 20px 15px 30px;
   border-radius: 5px;
-  width: 100%;
+  width: 80%;
 }
 // registration inputs
 #registration input[type="text"] {
@@ -495,6 +526,8 @@ form#registration {
   box-shadow: inset 1px 1px 2px 0 #707070;
   transition: box-shadow 0.3s;
   font-size: 20px;
+  width: 80%;
+
 }
 #registration input[type="text"]:focus,
 #registration input[type="text"].focus {
@@ -507,6 +540,7 @@ form#registration {
   box-shadow: inset 1px 1px 2px 0 #707070;
   transition: box-shadow 0.3s;
   font-size: 20px;
+  width: 80%;
 }
 #registration input[type="password"]:focus,
 #registration input[type="password"].focus {
@@ -515,14 +549,13 @@ form#registration {
 // Registration text
 #registration p {
   font-family: 'Francois One';
-  color: #EC368D;
-  font-size: 1.5em;
+  color: #5a5a5a;
+  font-size: 2em;
 }
 
 #back-button {
   text-decoration: none;
-  position: relative;
-  left: 82%;
+  float: right;
 }
 
 #current-user-login {
