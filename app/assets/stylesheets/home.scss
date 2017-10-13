@@ -90,16 +90,17 @@ h5#text {
   color: white;
   font-family: 'Francois One';
   font-size: 2.1em;
-  word-spacing: -1px;
   text-align: left;
+
 }
 
 // "JAM NOW" button
 #jam-now {
+  position: relative;
+  right: 20px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
   background-color: #FFF;
-  border: 2px solid white;
   width: 100%;
   padding: 20px 80px;
   color: #ff7f50;
@@ -163,9 +164,10 @@ img.icon:hover {
 }
 
 button:hover {
-  background-color: #ff7f50;
+  background-color: #FFF;
   opacity: 1;
-  color: white;
+  color: #ff7f50;
+  border: 3px solid #ff7f50;
 }
 
 // ALL BUTTONS ON HOME/SHOW PAGE`
@@ -187,9 +189,9 @@ button:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #FFF;
-  border: 2px solid #ff7f50;
-  color: #ff7f50;
+  background-color: #ff7f50;
+  border: 3px solid #FFF;
+  color: #FFF;
   padding: 20px 85px;
   border-radius: 5px;
   font-size: 20px;
@@ -292,6 +294,7 @@ button:hover {
 }
 // Container specific for callee input
 .callee-container {
+  box-shadow: 3px 3px 3px grey;
 }
 
 // ALL TEXT WITHIN THE CALL FIELDSET
@@ -345,6 +348,7 @@ button:hover {
   font-family: 'Francois One';
   color: #5a5a5a;
   font-size: 1.6em;
+  margin-left: 20%;
 }
 
 .h2-container {
@@ -388,6 +392,7 @@ input#callee {
 
 // Musician username container
 .musician-username-div {
+  text-align: left;
 }
 
 .nav-bar {
@@ -414,7 +419,7 @@ input#callee {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-right: 46.8%;
+  margin-right: 58.8%;
 }
 // Login message text displayed on modal
 #output1 {
