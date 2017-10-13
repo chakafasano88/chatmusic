@@ -24,10 +24,13 @@ console.log("DOM fully loaded and parsed");
   var output2 = document.querySelector("#output2");
   // Output message "processing"
   var output3 = document.querySelector("#output3");
+  //
+  const userOutput = document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
 
-    login.addEventListener("submit", function processLogin(){
-      output3.innerHTML = "Proccessing...";
-    });
+
+  login.addEventListener("submit", function processLogin(){
+    output3.innerHTML = "Proccessing...";
+  });
 
   const user = {
     "user_id": e.target.user_id.value,
@@ -71,6 +74,8 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
+        userOutput.innerHTML = user.user_id
+
         var timer = function(){
           modal.setAttribute("style", "display: none");
         };
@@ -82,7 +87,6 @@ if (registration) {
   });
 
   const obj = JSON.stringify(user);
-  document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
 
 
 
