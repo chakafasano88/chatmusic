@@ -104,12 +104,12 @@ if (registration) {
   // Variable to keep track of the call.
   var callId;
 
-  const sequenceContainer =  document.querySelector('#call-sequence');
+  const messages =  document.querySelector('.fieldset-message');
 
   // What to do when a call is initiated.
   function onCallInitiated(call, callee) {
       log("Call initiated with " + callee + ". Ringing...");
-      sequenceContainer.style = "box-shadow: 3px 3px 3px grey;"
+      messages.style = "box-shadow: 3px 3px 3px grey;"
       // Store the call id, so the caller has access to it.
       callId = call.getId();
 
