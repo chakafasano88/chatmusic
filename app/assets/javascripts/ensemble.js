@@ -108,7 +108,7 @@ if (registration) {
   // What to do when a call is initiated.
   function onCallInitiated(call, callee) {
       log("Call initiated with " + callee + ". Ringing...");
-\      // Store the call id, so the caller has access to it.
+      // Store the call id, so the caller has access to it.
       callId = call.getId();
 
       // Handle UI changes. A call is in progress.
