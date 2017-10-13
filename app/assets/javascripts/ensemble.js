@@ -104,11 +104,11 @@ if (registration) {
   // Variable to keep track of the call.
   var callId;
 
+
   // What to do when a call is initiated.
   function onCallInitiated(call, callee) {
       log("Call initiated with " + callee + ". Ringing...");
-
-      // Store the call id, so the caller has access to it.
+\      // Store the call id, so the caller has access to it.
       callId = call.getId();
 
       // Handle UI changes. A call is in progress.
@@ -119,7 +119,6 @@ if (registration) {
   // What to do for an incoming call.
   function onCallIncoming(call) {
     log("Incoming call from " + call.callerNumber);
-
       // Store the call id, so the callee has access to it.
       callId = call.getId();
 
@@ -176,10 +175,10 @@ if (registration) {
 
   var span = document.getElementsByClassName("close")[0];
 
-  span.onclick = function() {
-    modal.style.display = "none";
-    window.location.reload(true);
-  };
+  // span.onclick = function() {
+  //   modal.style.display = "none";
+  //   window.location.reload(true);
+  // };
 
 
 });
