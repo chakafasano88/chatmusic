@@ -281,11 +281,9 @@ button:hover {
 .call-container {
   width: 100%;
   padding-top: 60px;
-  height: 450px;
+  height: 550px;
   background-color: rgb(250,235,215);
   text-align: center;
-  box-shadow: 3px 3px 3px grey;
-
 }
 
 // Container specific to call buttons
@@ -312,10 +310,12 @@ button:hover {
   margin-right: 20%;
 }
 // the words "call sequence"
-#call-sequence-span {
+#call-sequence {
   font-family: 'Francois One';
   color: #ff7f50;
   font-size: 1.6em;
+  width: 50%;
+  margin-left: 25%;
 }
 
 // Video initialzed messages. (When making a call,
