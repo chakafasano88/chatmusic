@@ -25,7 +25,10 @@ console.log("DOM fully loaded and parsed");
   // Output message "processing"
   var output3 = document.querySelector("#output3");
   //
-  const userOutput = document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
+  const userOutput = document.querySelector(".current-user");
+
+  const obj = JSON.stringify(user);
+
 
 
   login.addEventListener("submit", function processLogin(){
@@ -74,7 +77,7 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
-        userOutput.innerHTML = user.user_id
+        userOutput.innerHTML = obj.user.user_id
 
         var timer = function(){
           modal.setAttribute("style", "display: none");
@@ -86,7 +89,6 @@ if (registration) {
     )
   });
 
-  const obj = JSON.stringify(user);
 
 
 
