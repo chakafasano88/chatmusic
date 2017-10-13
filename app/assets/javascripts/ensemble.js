@@ -74,8 +74,6 @@ if (registration) {
         var timer = function(){
           modal.setAttribute("style", "display: none");
         };
-        const obj = JSON.parse(user);
-        document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
@@ -83,6 +81,8 @@ if (registration) {
     )
   });
 
+  const obj = JSON.parse(user);
+  document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
 
 
 
