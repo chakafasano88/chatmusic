@@ -71,11 +71,15 @@ if (registration) {
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
         var timer = function(){
-          modal.setAttribute("style", "display: none")
+          modal.setAttribute("style", "display: none");
+          loginForm.reset();
         };
         setTimeout(timer, 3000);
       },
-      function loginFailure(){output2.innerHTML = "Login failed"},
+      function loginFailure(){
+        output2.innerHTML = "Login failed"
+        loginForm.reset();
+      },
     )
   });
 
@@ -174,11 +178,12 @@ if (registration) {
   };
 
   var span = document.getElementsByClassName("close")[0];
+  const loginForm = document.querySelector('#login')
 
-  // span.onclick = function() {
-  //   modal.style.display = "none";
-  //   window.location.reload(true);
-  // };
+  span.onclick = function() {
+    modal.style.display = "none";
+    loginForm.reset();
+  };
 
 
 });
