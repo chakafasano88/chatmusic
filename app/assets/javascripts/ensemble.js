@@ -33,7 +33,7 @@ console.log("DOM fully loaded and parsed");
 if (registration) {
   registration.addEventListener("submit", function(e) {
      e.preventDefault();
-     var user = {
+     const user = {
        "user_id": e.target.user_id.value,
        "user_first_name": e.target.user_first_name.value, // Optional
        "user_last_name": e.target.user_last_name.value, // Optional
@@ -72,16 +72,19 @@ if (registration) {
         output3.innerHTML = "";
         var timer = function(){
           modal.setAttribute("style", "display: none");
-          loginForm.reset();
         };
-        setTimeout(timer, 3000);
+        obj = JSON.parse(user);
+        document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
-        loginForm.reset();
       },
     )
   });
+
+
+
+
 
 
 
@@ -168,22 +171,20 @@ if (registration) {
     window.location = "/home/register";
   };
 
-  var loginButtElement = document.querySelector(".login-button-link")
-  var loginModal = document.querySelector(".hidden-login-div")
+
+  const span = document.getElementsByClassName("close")[0];
+  const loginForm = document.querySelector('#login')
+  const loginButtElement = document.querySelector(".login-button-link")
+  const loginModal = document.querySelector(".hidden-login-div")
   let loginRegisterButts =  document.querySelector(".login-button-link-div");
 
-
-    loginButtElement.onclick = function() {
-      loginModal.style.display = "flex";
+  loginButtElement.onclick = function() {
+    loginModal.style.display = "flex";
   };
-
-  var span = document.getElementsByClassName("close")[0];
-  const loginForm = document.querySelector('#login')
-
+  // Closes modal, resets form
   span.onclick = function() {
     modal.style.display = "none";
     loginForm.reset();
   };
-
 
 });
