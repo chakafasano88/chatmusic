@@ -81,7 +81,7 @@ if (registration) {
     )
   });
 
-  const obj = JSON.parse(user);
+  const obj = JSON.stringify(user);
   document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
 
 
