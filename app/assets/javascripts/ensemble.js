@@ -29,16 +29,17 @@ console.log("DOM fully loaded and parsed");
       output3.innerHTML = "Proccessing...";
     });
 
+  const user = {
+    "user_id": e.target.user_id.value,
+    "user_first_name": e.target.user_first_name.value, // Optional
+    "user_last_name": e.target.user_last_name.value, // Optional
+    "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
+  };
+
 //====================== REGISTER PEOPLE =================
 if (registration) {
   registration.addEventListener("submit", function(e) {
      e.preventDefault();
-     const user = {
-       "user_id": e.target.user_id.value,
-       "user_first_name": e.target.user_first_name.value, // Optional
-       "user_last_name": e.target.user_last_name.value, // Optional
-       "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
-     };
      // console.log(user)
      fetch("https://api.kandy.io/v1.2/domains/users/user_id?key=" + kandyDat, {
          headers: {
@@ -73,7 +74,7 @@ if (registration) {
         var timer = function(){
           modal.setAttribute("style", "display: none");
         };
-        obj = JSON.parse(user);
+        const obj = JSON.parse(user);
         document.querySelector(".current-user").innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
