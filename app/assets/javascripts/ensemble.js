@@ -121,7 +121,7 @@ if (registration) {
   // What to do for an incoming call.
   function onCallIncoming(call) {
     log("Incoming call from " + call.callerNumber);
-    sequenceContainer.style = "box-shadow: 3px 3px 3px grey;"
+    messages.style = "box-shadow: 3px 3px 3px grey;"
       // Store the call id, so the callee has access to it.
       callId = call.getId();
 
