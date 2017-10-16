@@ -173,7 +173,6 @@ if (registration) {
   // Closes modal, resets form
   span.onclick = function() {
     modal.style.display = "none";
-    loginForm.reset();
   };
 
 });
