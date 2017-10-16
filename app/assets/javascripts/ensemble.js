@@ -25,11 +25,15 @@ console.log("DOM fully loaded and parsed");
   // Output message "processing"
   const output3 = document.querySelector("#output3");
 
+  login.addEventListener("submit", function processLogin(){
+    output3.innerHTML = "Proccessing...";
+  });
+
 //====================== REGISTER PEOPLE =================
 if (registration) {
   registration.addEventListener("submit", function(e) {
      e.preventDefault();
-     var user = {
+     const user = {
        "user_id": e.target.user_id.value,
        "user_first_name": e.target.user_first_name.value, // Optional
        "user_last_name": e.target.user_last_name.value, // Optional
@@ -57,6 +61,8 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
+  // const obj = JSON.parse(user);
+  // const currentUser = document.querySelector('.json');
   login.addEventListener("submit", function (e) {
     e.preventDefault();
     kandy.login(
@@ -66,12 +72,22 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
+        var timer = function(){
+          modal.setAttribute("style", "display: none");
+        };
+        // currentUser.innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
       },
     )
   });
+
+
+
+
+
+
 
 // ============= LOGIN END =================
 
@@ -158,7 +174,6 @@ if (registration) {
 
 
   const span = document.getElementsByClassName("close")[0];
-  const loginForm = document.querySelector('#login')
   const loginButtElement = document.querySelector(".login-button-link")
   const loginModal = document.querySelector(".hidden-login-div")
   let loginRegisterButts =  document.querySelector(".login-button-link-div");
@@ -169,7 +184,7 @@ if (registration) {
   // Closes modal, resets form
   span.onclick = function() {
     modal.style.display = "none";
+    login.reset();
   };
-
 
 });
