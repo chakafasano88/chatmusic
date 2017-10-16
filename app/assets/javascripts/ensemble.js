@@ -10,20 +10,20 @@ console.log("DOM fully loaded and parsed");
 
       // Register listeners to call events.
       listeners: {
-          callInitiated: onCallInitiated,
-          callIncoming: onCallIncoming,
-          callEstablished: onCallEstablished
+        callInitiated: onCallInitiated,
+        callIncoming: onCallIncoming,
+        callEstablished: onCallEstablished
       }
   });
 
-  var registration = document.querySelector("#registration");
-  var login = document.querySelector("#login");
+  const registration = document.querySelector("#registration");
+  const login = document.querySelector("#login");
   // Output message for registration
-  var output1 = document.querySelector("#output1");
+  const output1 = document.querySelector("#output1");
   // Output message "login succesful" or "login failed"
-  var output2 = document.querySelector("#output2");
+  const output2 = document.querySelector("#output2");
   // Output message "processing"
-  var output3 = document.querySelector("#output3");
+  const output3 = document.querySelector("#output3");
 
   login.addEventListener("submit", function processLogin(){
     output3.innerHTML = "Proccessing...";
@@ -61,10 +61,6 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
-  // const obj = JSON.parse(user);
-  // const currentUser = document.querySelector('.json');
-
-
   login.addEventListener("submit", function (e) {
     e.preventDefault();
     kandy.login(
@@ -84,12 +80,6 @@ if (registration) {
       },
     )
   });
-
-
-
-
-
-
 
 // ============= LOGIN END =================
 
