@@ -66,12 +66,6 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
-<<<<<<< HEAD
-=======
-        var timer = function(){
-          modal.setAttribute("style", "display: none");
-        };
->>>>>>> 0d055fbf41ce4ce38e5e84bc0d284bb92ee728a7
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
@@ -79,11 +73,6 @@ if (registration) {
     )
   });
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 0d055fbf41ce4ce38e5e84bc0d284bb92ee728a7
 // ============= LOGIN END =================
 
     // Utility function for appending messages to the message div.
