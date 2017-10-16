@@ -70,10 +70,6 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
-        var timer = function(){
-          modal.setAttribute("style", "display: none");
-        };
-        // currentUser.innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
