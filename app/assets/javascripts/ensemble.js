@@ -24,28 +24,21 @@ console.log("DOM fully loaded and parsed");
   var output2 = document.querySelector("#output2");
   // Output message "processing"
   var output3 = document.querySelector("#output3");
-  //
-  const userOutput = document.querySelector(".current-user");
 
-  const obj = JSON.stringify(user);
-
-
-
-  login.addEventListener("submit", function processLogin(){
-    output3.innerHTML = "Proccessing...";
-  });
-
-  const user = {
-    "user_id": e.target.user_id.value,
-    "user_first_name": e.target.user_first_name.value, // Optional
-    "user_last_name": e.target.user_last_name.value, // Optional
-    "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
-  };
+    login.addEventListener("submit", function processLogin(){
+      output3.innerHTML = "Proccessing...";
+    });
 
 //====================== REGISTER PEOPLE =================
 if (registration) {
   registration.addEventListener("submit", function(e) {
      e.preventDefault();
+     const user = {
+       "user_id": e.target.user_id.value,
+       "user_first_name": e.target.user_first_name.value, // Optional
+       "user_last_name": e.target.user_last_name.value, // Optional
+       "user_password": e.target.user_password.value // Optional, will be generated if ommitted.
+     };
      // console.log(user)
      fetch("https://api.kandy.io/v1.2/domains/users/user_id?key=" + kandyDat, {
          headers: {
@@ -68,6 +61,10 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
+  // const obj = JSON.parse(user);
+  // const currentUser = document.querySelector('.json');
+
+
   login.addEventListener("submit", function (e) {
     e.preventDefault();
     kandy.login(
@@ -77,11 +74,11 @@ if (registration) {
       function loginSuccess(){
         output2.innerHTML = "Login succesful";
         output3.innerHTML = "";
-        userOutput.innerHTML = obj.user.user_id
-
+        currentUser.innerHTML = JSON.parse(e.target.user_name.value);
         var timer = function(){
           modal.setAttribute("style", "display: none");
         };
+        // currentUser.innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
