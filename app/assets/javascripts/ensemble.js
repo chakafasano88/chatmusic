@@ -25,15 +25,11 @@ console.log("DOM fully loaded and parsed");
   // Output message "processing"
   var output3 = document.querySelector("#output3");
 
-  login.addEventListener("submit", function processLogin(){
-    output3.innerHTML = "Proccessing...";
-  });
-
 //====================== REGISTER PEOPLE =================
 if (registration) {
   registration.addEventListener("submit", function(e) {
      e.preventDefault();
-     const user = {
+     var user = {
        "user_id": e.target.user_id.value,
        "user_first_name": e.target.user_first_name.value, // Optional
        "user_last_name": e.target.user_last_name.value, // Optional
@@ -61,10 +57,6 @@ if (registration) {
   }
 
 //====================== LOGIN PEOPLE ====================
-  // const obj = JSON.parse(user);
-  // const currentUser = document.querySelector('.json');
-
-
   login.addEventListener("submit", function (e) {
     e.preventDefault();
     kandy.login(
@@ -77,17 +69,12 @@ if (registration) {
         var timer = function(){
           modal.setAttribute("style", "display: none");
         };
-        // currentUser.innerHTML = obj.user.user_first_name;
       },
       function loginFailure(){
         output2.innerHTML = "Login failed"
       },
     )
   });
-
-
-
-
 
 
 
@@ -189,5 +176,6 @@ if (registration) {
     modal.style.display = "none";
     loginForm.reset();
   };
+
 
 });
