@@ -63,11 +63,6 @@ if (registration) {
     function loginSuccess(){
      output2.innerHTML = "Login succesful";
      output3.innerHTML = "";
-     var timer = function(){
-      modal.setAttribute("style", "display: none")
-     };
-     setTimeout(timer, 3000);
-    },
     function loginFailure(){output2.innerHTML = "Login failed"},
    )
   });
@@ -144,6 +139,6 @@ if (registration) {
  var span = document.getElementsByClassName("close")[0];
  span.onclick = function() {
   modal.style.display = "none";
-  login.reset();
+  login.reset(0);
  };
 });
