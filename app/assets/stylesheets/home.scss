@@ -610,7 +610,6 @@ form#registration {
       font-size: 4.6em;
       margin-bottom: 35%;
     }
-
     .callbutt {
       font-family: 'Francois One';
       cursor: pointer;
@@ -625,29 +624,12 @@ form#registration {
       font-size: 18px;
 
     }
-
     .register-text {
       font-family: 'Francois One';
       position: relative;
       display: flex;
       justify-content: flex-end;
-      margin-right: 45%;
-    }
-
-    // Musician username container
-    .musician-username-div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: inherit;
-    }
-
-    // the words "musician's username`"
-    #musician-username-span {
-      font-family: 'Francois One';
-      color: #5a5a5a;
-      font-size: 2em;
-      width: inherit;
+      margin-right: 47.8%;
     }
 
     .child-call-container {
@@ -659,12 +641,27 @@ form#registration {
       flex-direction: column;
     }
 
-    .call-buttons-container {
+    // Musician username container
+    .musician-username-div {
       display: flex;
       justify-content: center;
       width: 100%;
     }
 
+    // the words "musician's username`"
+    #musician-username-span {
+      font-family: 'Francois One';
+      color: #5a5a5a;
+      font-size: 2em;
+      width: inherit;
+      margin-left: 4%;
+    }
+
+    .call-buttons-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
 
     // Musician username input
     input#callee {
@@ -677,7 +674,7 @@ form#registration {
       border-bottom: 2px solid white;
       border-radius: 5px;
       width: 270%;
-      margin-right: 12.5%;
+      margin-right: 5%;
     }
 
   }
