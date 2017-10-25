@@ -8,7 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
-# Use sqlite3 as the database for Active Record
+# Use sqlite3 as the database to Active Record
 group :production do
   gem 'pg'
   gem 'thin'
