@@ -63,7 +63,9 @@ if (registration) {
     function loginSuccess(){
      output2.innerHTML = "Login succesful";
      output3.innerHTML = "";
-    function loginFailure(){output2.innerHTML = "Login failed"},
+      function loginFailure(){output2.innerHTML = "Login failed"
+      }
+    }
    )
   });
 // ============= LOGIN END =================

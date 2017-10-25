@@ -1,0 +1,43 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#FF7256;
+  height:100%;
+}
+
+
+#bar1{
+  border-style:solid;
+  border-color:#FFF;
+  height:100px;
+  width:30px;
+  position:absolute;
+  background:#FFF;
+  bottom:20%;
+  left:450px;
+}
+
+#bar2{
+  border-style:solid;
+  border-color:#FFF;
+  height:100px;
+  width:30px;
+  position:absolute;
+  background:#FFF;
+  bottom:20%;
+  left:500px;
+}
+
+#bar3{
+  border-style:solid;
+  border-color:#FFF;
+  height:100px;
+  width:30px;
+  position:absolute;
+  background:#FFF;
+  bottom:20%;
+  left:550px;
+}

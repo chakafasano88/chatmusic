@@ -11,6 +11,51 @@ body {
   margin: 0px;
   padding: 0px;
 }
+// Equalizer ANIMATIONS
+#bar1{
+  border-style: solid;
+  border-color: #ffd750;
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  background: #ffd750;
+  bottom: 50%;
+  left: 325px;
+}
+
+#bar2{
+  border-style: solid;
+  border-color: #ff5079;
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  background: #ff5079;
+  bottom: 50%;
+  left: 375px;
+}
+
+#bar3{
+  border-style: solid;
+  border-color: #ff7f50;
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  background: #ff7f50;
+  bottom: 50%;
+  left: 425px;
+}
+
+#bar4{
+  border-style: solid;
+  border-color: #5079ff;
+  height: 100px;
+  width: 30px;
+  position: absolute;
+  background: #5079ff;
+  bottom: 50%;
+  left: 475px;
+}
+
 
 .content-container {
   background: #FFF;
@@ -62,10 +107,13 @@ body {
 #text {
   text-align: center;
   margin: 20px;
+  font-size: 1.3em;
 }
 
-h5#text {
-  color: rgba(255,255,255, .9)
+#text2 {
+  color: rgba(255,255,255, .9);
+  text-align: center;
+  margin: 20px;
 }
 
 // HEADER STYLING
@@ -103,9 +151,8 @@ h5#text {
 .index-content {
   color: white;
   font-family: 'Francois One';
-  font-size: 2.1em;
+  font-size: 2em;
   text-align: left;
-
 }
 
 // "JAM NOW" button
@@ -583,7 +630,6 @@ form#registration {
 }
 
 .parent-call-container {
-  border: 3px solid red;
   width: 90%;
   height: 100%;
   display: flex;
@@ -602,7 +648,7 @@ form#registration {
       color: #FFF;
       font-weight: 800;
       margin-bottom: 8%;
-      font-size: .5em;
+      font-size: .8em;
     }
 
     .tagline2 {
@@ -610,6 +656,7 @@ form#registration {
       font-size: 4.6em;
       margin-bottom: 35%;
     }
+
     .callbutt {
       font-family: 'Francois One';
       cursor: pointer;
