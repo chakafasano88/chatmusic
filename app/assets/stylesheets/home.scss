@@ -32,10 +32,6 @@ body {
   display: flex;
 }
 
-.equalizer-image {
-
-}
-
 .parent2-container {
   height: 100%;
   width: 50%;
@@ -74,6 +70,15 @@ h5#text {
 
 // HEADER STYLING
 #ensemble {
+  position: relative;
+  font-family: 'Francois One';
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 800;
+  margin-bottom: 8%;
+}
+
+#ensemble2 {
   position: relative;
   font-family: 'Francois One';
   text-decoration: none;
@@ -208,7 +213,6 @@ button:hover {
   border-radius: 5px;
   font-size: 20px;
   opacity: .9;
-
 }
 
 // ======== Start Modal ==========
@@ -223,11 +227,11 @@ button:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 50%;
-  height: 60%;
+  width: 55%;
+  height: 75%;
   background-color: #FFF;
   border-radius: 5px;
-  box-shadow: 2px 3px 1px grey;
+  box-shadow: 2px 2px 1px 2px grey;
   z-index: 10;
   align-items: center;
   flex-direction: column;
@@ -249,6 +253,12 @@ button:hover {
   font-size: 4em;
   margin: 0 0 5% 40%;
   color: #5a5a5a;
+}
+
+.form-butt {
+  position: relative;
+  bottom: 50px;
+
 }
 
 // Modal "exit" button
@@ -276,7 +286,7 @@ button:hover {
   box-shadow: inset 1px 1px 2px 0 #707070;
   border-radius: 5px;
   margin: 0 0 10% 0;
-  width: 100%;
+  width: 80%;
   height: 50%;
 }
 
@@ -287,9 +297,10 @@ button:hover {
   padding-top: 60px;
   height: 550px;
   background-color: rgb(250,235,215);
-  text-align: center;
   box-shadow: 3px 3px 3px grey;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // Container specific to call buttons
@@ -316,12 +327,11 @@ button:hover {
   margin-right: 20%;
 }
 // the words "call sequence"
-#call-sequence {
+#call-log {
   font-family: 'Francois One';
   color: #ff7f50;
   font-size: 2.5em;
-  width: 50%;
-  margin-left: 25%;
+  margin-top: 3%;
 }
 
 // Video initialzed messages. (When making a call,
@@ -333,6 +343,7 @@ button:hover {
   color: #5a5a5a;
   width: 100%;
   background-color: #ff7f50;
+  border-radius: 5px;
   margin-top: 3%;
   overflow: hidden;
 }
@@ -353,9 +364,17 @@ button:hover {
 #musician-username-span {
   font-family: 'Francois One';
   color: #5a5a5a;
-  font-size: 2.5em;
-  margin-left: 20%;
+  font-size: 2.3em;
+  margin-right: 20px;
+  width: 40%;
 }
+
+// Musician username container
+.musician-username-div {
+  width: 55%;
+  display: flex;
+}
+
 
 .h2-container {
   width: 100%;
@@ -386,7 +405,7 @@ button:hover {
 
 // Musician username input
 input#callee {
-  padding: 12px;
+  padding: 10px;
   border: solid 1px #FFF;
   box-shadow: inset 1px 1px 2px 0 #707070;
   font-size: 25px;
@@ -394,11 +413,7 @@ input#callee {
   border:none;
   border-bottom: 2px solid white;
   border-radius: 5px;
-}
-
-// Musician username container
-.musician-username-div {
-  text-align: left;
+  width: 100%;
 }
 
 .nav-bar {
@@ -425,7 +440,7 @@ input#callee {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-right: 58.8%;
+  margin-right: 52.8%;
 }
 // Login message text displayed on modal
 #output1 {
@@ -439,15 +454,16 @@ input#callee {
 // Registration message text
 #output2 {
   font-family: 'Dosis';
-  font-size: 2.1em;
+  font-size: 2.6em;
   color: black;
 }
 
 #output3 {
   font-family: 'Dosis';
-  position: relative;
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: black;
+  position: relative;
+  bottom: 40px;
 }
 
 .video-container-parent {
@@ -504,7 +520,7 @@ form#registration {
   padding: 10px 20px;
   background-color: #FFF;
   border-radius: 5px;
-  box-shadow: 2px 3px 1px grey;
+  box-shadow: 2px 2px 1px 2px grey;
   margin: 10px auto;
   padding: 22px;
   border-radius: 8px;
@@ -532,9 +548,8 @@ form#registration {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #50d0ff;
-  border-color: #50d0ff;
-  color: #fff;
+  background-color: #ff7f50;
+  color: #FFF;
   padding: 15px 20px 15px 30px;
   border-radius: 5px;
   width: 80%;
@@ -578,8 +593,77 @@ form#registration {
   float: right;
 }
 
-#current-user-login {
-  font-family: 'Francois One';
-  color: #EC368D;
-  font-size: 1.5em;
-}
+@media only screen
+  and (min-width: 1000px)
+  and (max-width: 1360px){
+
+    .callbutt {
+      font-family: 'Francois One';
+      cursor: pointer;
+      margin: 1%;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: #ff7f50;
+      border: 3px solid #FFF;
+      color: #FFF;
+      padding: 16px 80px;
+      border-radius: 5px;
+      font-size: 18px;
+
+    }
+
+    .register-text {
+      font-family: 'Francois One';
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 45%;
+    }
+
+    // Musician username container
+    .musician-username-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    // the words "musician's username`"
+    #musician-username-span {
+      font-family: 'Francois One';
+      color: #5a5a5a;
+      font-size: 2.3em;
+      margin-right: 20px;
+      width: 50%;
+    }
+
+    .call-buttons-container {
+      margin: 50px 0 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    // HEADER STYLING
+    #ensemble {
+      position: relative;
+      font-family: 'Francois One';
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 800;
+      margin-bottom: 8%;
+      font-size: 1em;
+    }
+
+    #ensemble2 {
+      position: relative;
+      font-family: 'Francois One';
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 800;
+      margin-bottom: 8%;
+      font-size: .5em;
+    }
+
+
+  }
