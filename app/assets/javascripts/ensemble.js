@@ -63,11 +63,6 @@ if (registration) {
     function loginSuccess(){
      output2.innerHTML = "Login succesful";
      output3.innerHTML = "";
-     var timer = function(){
-      modal.setAttribute("style", "display: none")
-     };
-     setTimeout(timer, 3000);
-    },
     function loginFailure(){output2.innerHTML = "Login failed"},
    )
   });
@@ -126,7 +121,7 @@ if (registration) {
   document.getElementById("hold-call").disabled = false;
   document.getElementById("end-call").disabled = false;
  };
- var callEndElement = document.getElementById("callEnd")
+ const callEndElement = document.getElementById("callEnd")
   callEndElement.addEventListener("click", endCall)
   // End a call.
  function endCall() {
@@ -136,14 +131,14 @@ if (registration) {
  document.getElementById("register-butt").onclick = function() {
   window.location = "/home/register";
  };
- var loginButtElement = document.querySelector(".login-button-link")
- var loginModal = document.querySelector(".hidden-login-div")
+ const loginButtElement = document.querySelector(".login-button-link")
+ const loginModal = document.querySelector(".hidden-login-div")
   loginButtElement.onclick = function() {
    loginModal.style.display = "block";
  };
- var span = document.getElementsByClassName("close")[0];
+  const span = document.getElementsByClassName("close")[0];
  span.onclick = function() {
   modal.style.display = "none";
-  login.reset();
+  login.reset(0);
  };
 });
