@@ -292,9 +292,10 @@ button:hover {
 
 // ======== End Modal ===========
 // Container for all call related functionallity (buttons, inputs, messages)
-.call-container {
+.call-field {
   width: 100%;
   padding-top: 60px;
+  padding-bottom: 60px;
   height: 550px;
   background-color: rgb(250,235,215);
   box-shadow: 3px 3px 3px grey;
@@ -304,7 +305,7 @@ button:hover {
 }
 
 // Container specific to call buttons
-.call-buttons-container {
+.child-call-container {
   margin: 50px 0 0 0;
 }
 // Container specific for callee input
@@ -358,8 +359,9 @@ button:hover {
 
 // Musician username container
 .musician-username-div {
-  width: 55%;
+  width: inherit;
   display: flex;
+  margin-bottom: 5%;
 }
 
 
@@ -580,9 +582,18 @@ form#registration {
   float: right;
 }
 
+.parent-call-container {
+  border: 3px solid red;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media only screen
   and (min-width: 1000px)
-  and (max-width: 1360px){
+  and (max-width: 1324px){
 
     #ensemble2 {
       position: relative;
@@ -628,7 +639,7 @@ form#registration {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 73%;
+      width: inherit;
     }
 
     // the words "musician's username`"
@@ -636,14 +647,39 @@ form#registration {
       font-family: 'Francois One';
       color: #5a5a5a;
       font-size: 2em;
-      margin-right: 20px;
-      width: 40%;
+      width: inherit;
     }
 
-    .call-buttons-container {
+    .child-call-container {
       margin: 50px 0 0 0;
       width: 100%;
       display: flex;
+      align-items: center;
       justify-content: center;
+      flex-direction: column;
+    }
+
+    .call-buttons-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+
+    // Musician username input
+    input#callee {
+      padding: 10px;
+      border: solid 1px #FFF;
+      box-shadow: inset 1px 1px 2px 0 #707070;
+      font-size: 25px;
+      background-color: #FFF;
+      border:none;
+      border-bottom: 2px solid white;
+      border-radius: 5px;
+      width: 300%;
+    }
+
+    .responsive-container {
+
     }
   }

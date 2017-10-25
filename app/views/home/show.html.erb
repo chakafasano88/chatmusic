@@ -38,35 +38,35 @@
       <h2 id="title-text">Enter a musician's username below, and start a LIVE session</h2>
     </div>
   <!-- ==================== CALL FIELD ========================= -->
-  <div class="call-container">
+  <div class="call-field">
     <!-- User input: Callee field. -->
-    <br>
-    <br>
-    <br>
-  <div class="musician-username-div">
-    <span id="musician-username-span" >Enter Reciever:</span>
-    <input placeholder="username + @ensemble.gmail.com" type="text" style="text-align: center" id="callee"/>
-  </div>
+    <div class="parent-call-container">
+      <div style="border: 1px solid red;" class="child-call-container">
+          <div style="border: 1px solid red;" class="musician-username-div">
+            <label id="musician-username-span">Enter Reciever:</label>
+            <input placeholder="username + @ensemble.gmail.com" type="text" style="text-align: center" id="callee"/>
+          </div>
+          <div style="border: 1px solid red;" class="call-buttons-container" >
+              <!-- MAKE A CALL -->
+            <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
 
-  <div class="call-buttons-container">
-      <!-- MAKE A CALL -->
-    <button type="button" class="callbutt" id="makeCallButt"><span></span>Make Call</button>
+            <!-- ACCEPT A CALL -->
+            <button class="callbutt" type="button" id="acceptCall"><span></span>Accept Call</button>
 
-    <!-- ACCEPT A CALL -->
-    <button class="callbutt" type="button" id="acceptCall"><span></span>Accept Call</button>
-
-    <!-- END A CALL -->
-    <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
-  </div>
-  <br>
-  <br>
-    <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
-      <div id="call-log">
-        Call Log
-      </div>
-      <div class="fieldset-message">
-        <!-- Message output container. -->
-        <div id="messages"></div>
+            <!-- END A CALL -->
+            <button id="callEnd" class="callbutt" type="button" name="button"><span></span>End Call</button>
+          </div>
+        </div>
+      <br>
+      <br>
+        <!-- MESSAGES UPDATING USER ON CURRENT CALL STATUS -->
+        <div style="border: 1px solid red;" id="call-log">
+          Call Log
+        </div>
+        <div style="border: 1px solid red;" class="fieldset-message">
+          <!-- Message output container. -->
+          <div style="border: 1px solid red;" id="messages"></div>
+        </div>
       </div>
   </div>
 </div>
