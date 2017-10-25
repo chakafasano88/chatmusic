@@ -348,23 +348,12 @@ button:hover {
   overflow: hidden;
 }
 
-// The word "enter"
-#enter-span {
-  color: #FF299C;
-}
-// The word "live"
-#live-span {
-  color: #FF299C;}
-// The word "username"
-#username-span {
-  color: #FF299C;
-}
-
 // the words "musician's username`"
 #musician-username-span {
   font-family: 'Francois One';
   color: #5a5a5a;
-  font-size: 2.3fem;
+  font-size: 2.3em;
+  width: 40%;
 }
 
 // Musician username container
@@ -632,7 +621,7 @@ form#registration {
       color: #5a5a5a;
       font-size: 2.3em;
       margin-right: 20px;
-      width: 50%;
+      width: 30%;
     }
 
     .call-buttons-container {
