@@ -654,7 +654,7 @@ form#registration {
     .tagline2 {
       font-family: 'montserrat';
       font-size: 4.6em;
-      margin-bottom: 35%;
+      margin-bottom: 25%;
     }
 
     .callbutt {
@@ -723,5 +723,52 @@ form#registration {
       width: 270%;
       margin-right: 5%;
     }
+
+    // Equalizer ANIMATIONS
+    #bar1{
+      border-style: solid;
+      border-color: #ffd750;
+      height: 100px;
+      width: 30px;
+      position: absolute;
+      background: #ffd750;
+      bottom: 45%;
+      left: 175px;
+    }
+
+    #bar2{
+      border-style: solid;
+      border-color: #ff5079;
+      height: 100px;
+      width: 30px;
+      position: absolute;
+      background: #ff5079;
+      bottom: 45%;
+      left: 225px;
+    }
+
+    #bar3{
+      border-style: solid;
+      border-color: #ff7f50;
+      height: 100px;
+      width: 30px;
+      position: absolute;
+      background: #ff7f50;
+      bottom: 45%;
+      left: 275px;
+    }
+
+    #bar4{
+      border-style: solid;
+      border-color: #5079ff;
+      height: 100px;
+      width: 30px;
+      position: absolute;
+      background: #5079ff;
+      bottom: 45%;
+      left: 325px;
+    }
+
+
 
   }
