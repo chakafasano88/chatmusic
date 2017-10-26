@@ -20,7 +20,7 @@ body {
   position: absolute;
   background: #ffd750;
   bottom: 50%;
-  left: 325px;
+  left: 275px;
 }
 
 #bar2{
@@ -31,7 +31,7 @@ body {
   position: absolute;
   background: #ff5079;
   bottom: 50%;
-  left: 375px;
+  left: 325px;
 }
 
 #bar3{
@@ -42,7 +42,7 @@ body {
   position: absolute;
   background: #ff7f50;
   bottom: 50%;
-  left: 425px;
+  left: 375px;
 }
 
 #bar4{
@@ -53,7 +53,7 @@ body {
   position: absolute;
   background: #5079ff;
   bottom: 50%;
-  left: 475px;
+  left: 425px;
 }
 
 
@@ -643,18 +643,18 @@ form#registration {
 
     #ensemble2 {
       position: relative;
+      top: 75px;
       font-family: 'Francois One';
       text-decoration: none;
       color: #FFF;
       font-weight: 800;
-      margin-bottom: 8%;
-      font-size: .8em;
+      font-size: .7em;
     }
 
     .tagline2 {
       font-family: 'montserrat';
       font-size: 4.6em;
-      margin-bottom: 25%;
+      margin-top: 25%;
     }
 
     .callbutt {
@@ -732,7 +732,7 @@ form#registration {
       width: 30px;
       position: absolute;
       background: #ffd750;
-      bottom: 45%;
+      bottom: 20%;
       left: 175px;
     }
 
@@ -743,7 +743,7 @@ form#registration {
       width: 30px;
       position: absolute;
       background: #ff5079;
-      bottom: 45%;
+      bottom: 20%;
       left: 225px;
     }
 
@@ -754,7 +754,7 @@ form#registration {
       width: 30px;
       position: absolute;
       background: #ff7f50;
-      bottom: 45%;
+      bottom: 20%;
       left: 275px;
     }
 
@@ -765,10 +765,7 @@ form#registration {
       width: 30px;
       position: absolute;
       background: #5079ff;
-      bottom: 45%;
+      bottom: 20%;
       left: 325px;
     }
-
-
-
   }

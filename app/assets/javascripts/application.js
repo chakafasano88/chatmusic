@@ -19,10 +19,10 @@ $(window).ready(function(){
 });
 
 function soundOn(){
-  $("#bar1").animate({height:'200px'}, 100, soundOn);
-  $("#bar2").animate({height:'200px'}, 150);
-  $("#bar3").animate({height:'200px'}, 150);
-  $("#bar4").animate({height:'200px'}, 150);
+  $("#bar1").animate({height:'170px'}, 100, soundOn);
+  $("#bar2").animate({height:'170px'}, 150);
+  $("#bar3").animate({height:'170px'}, 150);
+  $("#bar4").animate({height:'170px'}, 150);
   $("#bar1").animate({height:'70px'}, 150);
   $("#bar2").animate({height:'100px'}, 150);
   $("#bar3").animate({height:'40px'}, 150);
