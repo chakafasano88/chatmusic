@@ -61,7 +61,7 @@ if (registration) {
     e.target.user_name.value,
     e.target.user_password.value,
     function loginSuccess(){
-     output2.innerHTML = "Login succesful";
+     output2.innerHTML = "Login successful";
      output3.innerHTML = "";
       function loginFailure(){output2.innerHTML = "Login failed"
       }
