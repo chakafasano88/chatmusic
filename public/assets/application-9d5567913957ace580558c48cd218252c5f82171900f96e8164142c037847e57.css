@@ -1,15 +1,18 @@
+/* line 1, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 * {
   margin: 0px;
   padding: 0px;
 }
 
+/* line 6, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 body {
   background-color: #FFF;
   margin: 0px;
   padding: 0px;
 }
-// Equalizer ANIMATIONS
-#bar1{
+
+/* line 12, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+#bar1 {
   border-style: solid;
   border-color: #ffd750;
   height: 100px;
@@ -20,7 +23,8 @@ body {
   left: 275px;
 }
 
-#bar2{
+/* line 23, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+#bar2 {
   border-style: solid;
   border-color: #ff5079;
   height: 100px;
@@ -31,7 +35,8 @@ body {
   left: 325px;
 }
 
-#bar3{
+/* line 34, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+#bar3 {
   border-style: solid;
   border-color: #ff7f50;
   height: 100px;
@@ -42,7 +47,8 @@ body {
   left: 375px;
 }
 
-#bar4{
+/* line 45, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+#bar4 {
   border-style: solid;
   border-color: #5079ff;
   height: 100px;
@@ -53,7 +59,7 @@ body {
   left: 425px;
 }
 
-
+/* line 56, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .content-container {
   background: #FFF;
   position: absolute;
@@ -66,6 +72,7 @@ body {
   justify-content: center;
 }
 
+/* line 68, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .parent1-container {
   height: 100%;
   width: 50%;
@@ -74,6 +81,7 @@ body {
   display: flex;
 }
 
+/* line 76, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .parent2-container {
   height: 100%;
   width: 50%;
@@ -82,6 +90,7 @@ body {
   display: flex;
 }
 
+/* line 84, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .child1-container {
   width: 100%;
   height: 100%;
@@ -91,6 +100,7 @@ body {
   justify-content: space-between;
 }
 
+/* line 93, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .child2-container {
   width: 100%;
   height: 100%;
@@ -101,19 +111,21 @@ body {
   position: relative;
 }
 
+/* line 103, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #text {
   text-align: center;
   margin: 20px;
   font-size: 1.3em;
 }
 
+/* line 109, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #text2 {
-  color: rgba(255,255,255, .9);
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   margin: 20px;
 }
 
-// HEADER STYLING
+/* line 116, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #ensemble {
   position: relative;
   font-family: 'Francois One';
@@ -123,6 +135,7 @@ body {
   margin-bottom: 8%;
 }
 
+/* line 125, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #ensemble2 {
   position: relative;
   font-family: 'Francois One';
@@ -131,19 +144,20 @@ body {
   margin-bottom: 8%;
 }
 
-// CONTAINER FOR ALL OTHER FONT ON LANDING PAGE
+/* line 134, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .tagline {
   font-family: 'Francois One';
   font-size: 4.6em;
 }
 
+/* line 139, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .tagline2 {
   font-family: 'Francois One';
   font-size: 4.6em;
   margin-bottom: 35%;
 }
 
-// Landing page container for app description
+/* line 146, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .index-content {
   color: white;
   font-family: 'Francois One';
@@ -151,7 +165,7 @@ body {
   text-align: left;
 }
 
-// "JAM NOW" button
+/* line 154, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #jam-now {
   position: relative;
   right: 20px;
@@ -167,14 +181,14 @@ body {
   flex-direction: row-reverse;
 }
 
-
+/* line 170, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 i.fa.fa-arrow-circle-o-down {
   font-size: 60px;
   padding: 4px 0 0 0;
   margin-right: 10px;
-
 }
 
+/* line 177, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .mic-image {
   width: 30%;
   height: 30%;
@@ -182,7 +196,7 @@ i.fa.fa-arrow-circle-o-down {
 }
 
 /* ======== SHOW PAGE ======= */
-
+/* line 185, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .show-container1 {
   display: flex;
   flex-direction: column;
@@ -190,19 +204,22 @@ i.fa.fa-arrow-circle-o-down {
   padding: 40px 15px;
 }
 
-.icon-container{
+/* line 192, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+.icon-container {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
+/* line 199, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .icon {
   width: 80px;
   height: 80px;
   margin-right: -10px;
 }
 
+/* line 205, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #icon-text {
   font-family: 'Francois One';
   font-size: 3.2em;
@@ -211,15 +228,18 @@ i.fa.fa-arrow-circle-o-down {
   box-shadow: none;
 }
 
+/* line 213, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 a:hover {
   opacity: 1;
   cursor: pointer;
 }
 
+/* line 218, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 img.icon:hover {
   border-color: none;
 }
 
+/* line 222, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 button:hover {
   background-color: #FFF;
   opacity: 1;
@@ -227,9 +247,7 @@ button:hover {
   border: 3px solid #ff7f50;
 }
 
-
-
-// ALL BUTTONS ON HOME/SHOW PAGE`
+/* line 232, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .callbutt {
   border: none;
   font-family: 'Francois One';
@@ -257,12 +275,12 @@ button:hover {
   opacity: .9;
 }
 
-// ======== Start Modal ==========
-// Hidden modal div
+/* line 261, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .hidden-login-div {
   display: none;
 }
-// This is the visible modal div
+
+/* line 265, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #modal {
   position: fixed;
   left: 50%;
@@ -280,6 +298,7 @@ button:hover {
   justify-content: flex-start;
 }
 
+/* line 282, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .modal-header-container {
   display: flex;
   justify-content: center;
@@ -288,7 +307,7 @@ button:hover {
   width: 100%;
 }
 
-// "Login" text on modal
+/* line 291, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #modal-header {
   font-family: 'Francois One';
   letter-spacing: 5px;
@@ -297,13 +316,13 @@ button:hover {
   color: #5a5a5a;
 }
 
+/* line 299, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .form-butt {
   position: relative;
   bottom: 50px;
-
 }
 
-// Modal "exit" button
+/* line 306, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .close {
   position: relative;
   color: #000;
@@ -314,13 +333,13 @@ button:hover {
   padding: 0 10px 0 0;
 }
 
-// Class for modal inputs
+/* line 317, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .modal-input-container {
   background-color: red;
   width: inherit;
 }
 
-// Username and Password inputs on modal
+/* line 323, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #modal-input {
   padding: 22px;
   font-size: 1em;
@@ -332,30 +351,30 @@ button:hover {
   height: 50%;
 }
 
-// ======== End Modal ===========
-// Container for all call related functionallity (buttons, inputs, messages)
+/* line 336, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .call-field {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 60px;
   height: 550px;
-  background-color: rgb(250,235,215);
+  background-color: antiquewhite;
   box-shadow: 3px 3px 3px grey;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-// Container specific to call buttons
+/* line 349, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .child-call-container {
   margin: 50px 0 0 0;
 }
-// Container specific for callee input
+
+/* line 353, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .callee-container {
   box-shadow: 3px 3px 3px grey;
 }
 
-// ALL TEXT WITHIN THE CALL FIELDSET
+/* line 358, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .calltext {
   font-family: 'Francois One';
   position: relative;
@@ -363,13 +382,15 @@ button:hover {
   color: white;
 }
 
+/* line 365, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .fieldset-message {
   border-radius: 5px;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
 }
-// the words "call sequence"
+
+/* line 372, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #call-log {
   font-family: 'Francois One';
   color: #ff7f50;
@@ -377,8 +398,7 @@ button:hover {
   margin-top: 3%;
 }
 
-// Video initialzed messages. (When making a call,
-// messages update the current call process)
+/* line 381, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #messages {
   position: relative;
   font-family: 'Francois One';
@@ -391,7 +411,7 @@ button:hover {
   overflow: hidden;
 }
 
-// the words "musician's username`"
+/* line 394, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #musician-username-span {
   font-family: 'Francois One';
   color: #5a5a5a;
@@ -399,14 +419,14 @@ button:hover {
   width: 45%;
 }
 
-// Musician username container
+/* line 402, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .musician-username-div {
   width: inherit;
   display: flex;
   margin-bottom: 5%;
 }
 
-
+/* line 409, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .h2-container {
   width: 100%;
   margin: 30px 0 50px 0;
@@ -416,7 +436,7 @@ button:hover {
   flex-direction: column;
 }
 
-// Start Session object
+/* line 419, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #start-session {
   width: 100%;
   font-size: 3.3em;
@@ -425,7 +445,7 @@ button:hover {
   text-align: center;
 }
 
-// Show description object
+/* line 428, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #title-text {
   font-family: 'Francois One';
   width: 60%;
@@ -434,19 +454,20 @@ button:hover {
   opacity: .8;
 }
 
-// Musician username input
+/* line 437, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 input#callee {
   padding: 10px;
   border: solid 1px #FFF;
   box-shadow: inset 1px 1px 2px 0 #707070;
   font-size: 25px;
   background-color: #FFF;
-  border:none;
+  border: none;
   border-bottom: 2px solid white;
   border-radius: 5px;
   width: 100%;
 }
 
+/* line 449, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .nav-bar {
   width: 100%;
   height: 110px;
@@ -455,17 +476,18 @@ input#callee {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 10px;
-  background-color: rgb(250,235,215);
+  background-color: antiquewhite;
   box-shadow: 2px 2px 2px 0 #707070;
 }
 
-// Login button which opens a modal to login
+/* line 462, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .login-button-link-div {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
+/* line 468, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .register-text {
   font-family: 'Francois One';
   position: relative;
@@ -473,7 +495,8 @@ input#callee {
   justify-content: flex-end;
   margin-right: 52.8%;
 }
-// Login message text displayed on modal
+
+/* line 476, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #output1 {
   font-family: 'Dosis';
   position: relative;
@@ -482,13 +505,15 @@ input#callee {
   font-size: 2.1em;
   color: #FF299C;
 }
-// Registration message text
+
+/* line 485, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #output2 {
   font-family: 'Dosis';
   font-size: 2.6em;
   color: black;
 }
 
+/* line 491, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #output3 {
   font-family: 'Dosis';
   font-size: 1.4em;
@@ -497,23 +522,33 @@ input#callee {
   bottom: 40px;
 }
 
+/* line 499, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
+.output4 {
+  font-family: 'Dosis';
+  font-size: 1.4em;
+  color: black;
+  width: 95%;
+  text-align: right;
+}
+
+/* line 507, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .video-container-parent {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 15px;
-
 }
 
+/* line 515, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .video-container-child {
   width: 100%;
-  background-color: rgb(250,235,215);
+  background-color: antiquewhite;
   height: 650px;
   box-shadow: 3px 3px 3px grey;
   text-align: center;
 }
 
-
+/* line 524, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .video-flex {
   width: 100%;
   height: 450px;
@@ -521,6 +556,7 @@ input#callee {
   justify-content: center;
 }
 
+/* line 531, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #video-header {
   width: 100%;
   height: 80px;
@@ -528,7 +564,7 @@ input#callee {
   color: #5a5a5a;
 }
 
-// Remote video container
+/* line 539, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #local-container {
   position: relative;
   width: 40%;
@@ -536,7 +572,8 @@ input#callee {
   height: 400px;
   position: relative;
 }
-// Local video container
+
+/* line 547, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #remote-container {
   width: 40%;
   margin-right: 5%;
@@ -544,7 +581,7 @@ input#callee {
   position: relative;
 }
 
-// REGISTRATION FORM ON HOME/REGISTRATION PAGE
+/* line 555, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 form#registration {
   width: 50%;
   height: 100%;
@@ -560,7 +597,8 @@ form#registration {
   position: relative;
   top: 50px;
 }
-// registration button
+
+/* line 571, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration button {
   border: none;
   font-family: 'Francois One';
@@ -585,7 +623,8 @@ form#registration {
   border-radius: 5px;
   width: 80%;
 }
-// registration inputs
+
+/* line 596, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration input[type="text"] {
   padding: 10px;
   border: solid 1px #fff;
@@ -593,13 +632,15 @@ form#registration {
   transition: box-shadow 0.3s;
   font-size: 20px;
   width: 80%;
-
 }
+
+/* line 605, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration input[type="text"]:focus,
 #registration input[type="text"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
+/* line 610, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration input[type="password"] {
   padding: 10px;
   border: solid 1px #fff;
@@ -608,22 +649,27 @@ form#registration {
   font-size: 20px;
   width: 80%;
 }
+
+/* line 618, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration input[type="password"]:focus,
 #registration input[type="password"].focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
-// Registration text
+
+/* line 623, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #registration p {
   font-family: 'Francois One';
   color: #5a5a5a;
   font-size: 2em;
 }
 
+/* line 629, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 #back-button {
   text-decoration: none;
   float: right;
 }
 
+/* line 634, /Users/matthewfasano/Desktop/Coding/chat_music/app/assets/stylesheets/application.css.scss */
 .parent-call-container {
   width: 90%;
   height: 100%;
@@ -631,136 +677,3 @@ form#registration {
   flex-direction: column;
   align-items: center;
 }
-
-@media only screen
-  and (min-width: 1000px)
-  and (max-width: 1324px){
-
-    #ensemble2 {
-      position: relative;
-      top: 75px;
-      font-family: 'Francois One';
-      text-decoration: none;
-      color: #FFF;
-      font-weight: 800;
-      font-size: .7em;
-    }
-
-    .tagline2 {
-      font-family: 'montserrat';
-      font-size: 4.6em;
-      margin-top: 25%;
-    }
-
-    .callbutt {
-      font-family: 'Francois One';
-      cursor: pointer;
-      margin: 1%;
-      text-transform: uppercase;
-      font-weight: 700;
-      background-color: #ff7f50;
-      border: 3px solid #FFF;
-      color: #FFF;
-      padding: 16px 80px;
-      border-radius: 5px;
-      font-size: 18px;
-
-    }
-    .register-text {
-      font-family: 'Francois One';
-      position: relative;
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 47.8%;
-    }
-
-    .child-call-container {
-      margin: 50px 0 0 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    // Musician username container
-    .musician-username-div {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    // the words "musician's username`"
-    #musician-username-span {
-      font-family: 'Francois One';
-      color: #5a5a5a;
-      font-size: 2em;
-      width: inherit;
-      margin-left: 4%;
-    }
-
-    .call-buttons-container {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    // Musician username input
-    input#callee {
-      padding: 10px;
-      border: solid 1px #FFF;
-      box-shadow: inset 1px 1px 2px 0 #707070;
-      font-size: 25px;
-      background-color: #FFF;
-      border:none;
-      border-bottom: 2px solid white;
-      border-radius: 5px;
-      width: 270%;
-      margin-right: 5%;
-    }
-
-    // Equalizer ANIMATIONS
-    #bar1{
-      border-style: solid;
-      border-color: #ffd750;
-      height: 100px;
-      width: 30px;
-      position: absolute;
-      background: #ffd750;
-      bottom: 20%;
-      left: 175px;
-    }
-
-    #bar2{
-      border-style: solid;
-      border-color: #ff5079;
-      height: 100px;
-      width: 30px;
-      position: absolute;
-      background: #ff5079;
-      bottom: 20%;
-      left: 225px;
-    }
-
-    #bar3{
-      border-style: solid;
-      border-color: #ff7f50;
-      height: 100px;
-      width: 30px;
-      position: absolute;
-      background: #ff7f50;
-      bottom: 20%;
-      left: 275px;
-    }
-
-    #bar4{
-      border-style: solid;
-      border-color: #5079ff;
-      height: 100px;
-      width: 30px;
-      position: absolute;
-      background: #5079ff;
-      bottom: 20%;
-      left: 325px;
-    }
-  }

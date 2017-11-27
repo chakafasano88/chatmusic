@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   login.addEventListener("submit", function processLogin(){
    output3.innerHTML = "Proccessing...";
   });
+  var output4 = document.querySelector(".output4");
+
 //====================== REGISTER PEOPLE =================
 if (registration) {
  registration.addEventListener("submit", function(e) {
@@ -54,20 +56,21 @@ if (registration) {
   });
  }
 //====================== LOGIN PEOPLE ====================
-  login.addEventListener("submit", function (e) {
-   e.preventDefault();
-   kandy.login(
-    kandyKey,
-    e.target.user_name.value,
-    e.target.user_password.value,
-    function loginSuccess(){
-     output2.innerHTML = "Login successful";
-     output3.innerHTML = "";
-      function loginFailure(){output2.innerHTML = "Login failed"
-      }
+login.addEventListener("submit", function (e) {
+ e.preventDefault();
+ kandy.login(
+  kandyKey,
+  e.target.user_name.value,
+  e.target.user_password.value,
+  function (){
+   output2.innerHTML = "Login successful";
+   output4.innerHTML = "Logged in as" + " " + e.target.user_name.value
+   localStorage.setItem(user_id)
+  },
+    function (){output2.innerHTML = "Login failed"
     }
-   )
-  });
+ )
+});
 // ============= LOGIN END =================
   // Utility function for appending messages to the message div.
  function log(message) {
